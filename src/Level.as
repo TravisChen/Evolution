@@ -5,9 +5,7 @@ package    {
 	public class Level {
 		
 		public var player:Player;
-		public var playerZeroG:PlayerZeroG;
-		public var shuttle:Shuttle;
-		
+
 		public var levelSizeX:Number = 0;
 		public var levelSizeY:Number = 0;
 		public var endX:Number = 0;

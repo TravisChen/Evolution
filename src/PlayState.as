@@ -38,19 +38,6 @@ package
 				FlxG.camera.setBounds(0,0,_currLevel.levelSizeX,_currLevel.levelSizeY);
 			}
 			
-			if( _currLevel.shuttle != null )
-			{
-				FlxG.camera.follow(_currLevel.shuttle, FlxCamera.STYLE_PLATFORMER);
-				FlxG.camera.setBounds(0,0,_currLevel.levelSizeX,_currLevel.levelSizeY);
-			}
-			
-			// Camera
-			if( _currLevel.playerZeroG != null )
-			{
-				FlxG.camera.follow(_currLevel.playerZeroG, FlxCamera.STYLE_PLATFORMER);
-				FlxG.camera.setBounds(0,0,_currLevel.levelSizeX,_currLevel.levelSizeY);
-			}
-			
 			// Update level
 			_currLevel.update();
 			

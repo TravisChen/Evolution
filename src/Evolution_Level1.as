@@ -2,7 +2,7 @@ package    {
 		
 	import org.flixel.*;
 	
-	public class TinyWorld_Level1 extends Level{
+	public class Evolution_Level1 extends Level{
 		
 		[Embed(source = '../data/shuttle-gantry-back.png')] private var ImgBackground:Class;
 		[Embed(source = '../data/shuttle-gantry-fore.png')] private var ImgForeground:Class;
@@ -10,7 +10,7 @@ package    {
 		
 		public var soundEngineNoise:FlxSound;	
 		
-		public function TinyWorld_Level1( group:FlxGroup ) {
+		public function Evolution_Level1( group:FlxGroup ) {
 			
 			super();
 			

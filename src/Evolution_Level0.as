@@ -2,11 +2,11 @@ package    {
 	
 	import org.flixel.*;
 	
-	public class TinyWorld_Level0 extends Level{
+	public class Evolution_Level0 extends Level{
 		
 		[Embed(source = '../data/intro.png')] private var ImgBackground:Class;
 		
-		public function TinyWorld_Level0( group:FlxGroup ) {
+		public function Evolution_Level0( group:FlxGroup ) {
 			
 			super();
 			
