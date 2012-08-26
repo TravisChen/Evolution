@@ -4,50 +4,34 @@ package
 	
 	public class Player extends FlxSprite
 	{
-		[Embed(source="data/pilot-anims.png")] private var ImgPilot:Class;
-		public var isSittingDown:Boolean = false;
-		private var sitDownAnim:Boolean = false;
-		
+		[Embed(source="data/darwin.png")] private var ImgDarwn:Class;
+		private var jumpPower:int;
+		private var jumping:Boolean;
+
 		public function Player(X:int,Y:int)
 		{
 			super(X,Y);
-			loadGraphic(ImgPilot,true,true,32,32);
+			loadGraphic(ImgDarwn,true,true,32,32);
+			
+			//bounding box tweaks
+			width = 16;
+			height = 32;
+			offset.x = 8;
+			jumping = false;
 			
 			//basic player physics
-			var runSpeed:uint = 40;
+			var runSpeed:uint = 80;
 			drag.x = runSpeed*8;
+			acceleration.y = 420;
+			jumpPower = 200;
 			maxVelocity.x = runSpeed;
-			
+			maxVelocity.y = jumpPower;
+				
 			addAnimation("idle", [0]);
-			addAnimation("walk", [1,2,3,4], 6);
-			addAnimation("sit_down", [5,6,7,8], 5, false);
-			addAnimation("sit_down_idle", [8]);
 		}
 
-		public function updateSitDown():void
-		{
-			velocity.x = 0;
-			acceleration.x = 0;
-			if( !sitDownAnim )
-			{
-				play("sit_down");
-				sitDownAnim = true;
-			}
-		}
-		
 		override public function update():void
 		{
-			// SIT DOWN UPDATE
-			if( isSittingDown )
-			{
-				updateSitDown();
-
-				//UPDATE POSITION AND ANIMATION
-				super.update();
-				
-				return;
-			}
-			
 			//MOVEMENT
 			acceleration.x = 0;
 			if(FlxG.keys.LEFT)
@@ -61,29 +45,23 @@ package
 				acceleration.x += drag.x;
 			}
 			
-			//BOUNDARY
-			if( x <= 0 - this.width/2)
+			if( FlxG.keys.UP )
 			{
-				velocity.x = 0;
-				x = 0 - this.width/2;
+				if( !velocity.y && !jumping )
+					velocity.y = -jumpPower;
+				jumping = true;
+			}
+			else
+			{
+				jumping = false;
 			}
 			
-			if( x >= PlayState._currLevel.levelSizeX)
-			{
-				velocity.x = 0;
-				x = PlayState._currLevel.levelSizeX;				
-			}
-
 			//ANIMATION
 			if(velocity.x == 0)
 			{
 				play("idle");
 			}
-			else
-			{
-				play("walk");
-			}
-			
+
 			//UPDATE POSITION AND ANIMATION
 			super.update();
 		}

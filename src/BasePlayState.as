@@ -7,8 +7,8 @@ package
 	public class BasePlayState extends FlxState
 	{
 		public static var levelArray:Array = [
-			Evolution_Level0,
-			Evolution_Level1
+			Evolution_LevelMenu,
+			Evolution_LevelMain
 		]
 		
 		public function BasePlayState():void

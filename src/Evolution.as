@@ -1,7 +1,7 @@
 package
 {
 	import org.flixel.*; 
-	[SWF(width="890", height="600", backgroundColor="#000000")] 
+	[SWF(width="1280", height="512", backgroundColor="#000000")] 
 	
 	public class Evolution extends FlxGame
 	{
@@ -9,7 +9,7 @@ package
 		
 		public function Evolution()
 		{
-			super(178,120,PlayState,5);
+			super(320,128,PlayState,4);
 		}
 	}
 }
