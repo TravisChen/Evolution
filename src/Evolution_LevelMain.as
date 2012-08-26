@@ -5,6 +5,8 @@ package    {
 	public class Evolution_LevelMain extends Level{
 		
 		[Embed(source = '../data/stage.png')] private var ImgBackground:Class;
+		[Embed(source = '../data/grass.png')] private var ImgForeground:Class;
+		[Embed(source='../data/inventory.png')] private var ImgInventory:Class;
 		
 		[Embed(source='../data/Tilemaps/map-tiles.png')] private var ImgTiles:Class;
 		[Embed(source='../data/Tilemaps/MapCSV_Evolution_Boundary.txt',mimeType="application/octet-stream")] private var TxtMap:Class;
@@ -20,6 +22,8 @@ package    {
 		private var roundEndText:FlxText;
 		private var roundEndContinueText:FlxText;
 		
+		private var inventory:Inventory;
+		
 		public const MAX_TIME:uint = 60;
 		public const TEXT_COLOR:uint = 0xFFF8CA00;
 		
@@ -27,7 +31,7 @@ package    {
 			
 			super();
 			
-			levelSizeX = 320;
+			levelSizeX = 640;
 			levelSizeY = 128;
 			endX = 275;
 			
@@ -39,12 +43,12 @@ package    {
 			tilemap.follow();
 			
 			// Create player
-			player = new Player(100,80);
+			player = new Player(100,72);
 			PlayState.groupPlayer.add(player);
 
 			// Create collect
-			var skull:Skull = new Skull(200, FlxG.height - 32, player, PlayState.groupForeground, tilemap);
-			var skull2:Skull = new Skull(80, FlxG.height - 32, player, PlayState.groupForeground, tilemap);
+			var skull:Skull = new Skull(200, FlxG.height - 40, player, PlayState.groupForeground, tilemap);
+			var skull2:Skull = new Skull(80, FlxG.height - 40, player, PlayState.groupForeground, tilemap);
 			PlayState.groupCollects.add(skull);
 			PlayState.groupCollects.add(skull2);
 			
@@ -60,6 +64,11 @@ package    {
 			pointsText.setFormat(null,16,TEXT_COLOR,"right");
 			pointsText.scrollFactor.x = pointsText.scrollFactor.y = 0;
 			PlayState.groupForeground.add(pointsText);
+			
+			// Inventory
+			inventory = new Inventory(FlxG.width - 56,FlxG.height - 56);
+			inventory.scrollFactor.x = inventory.scrollFactor.y = 0;
+			PlayState.groupForeground.add(inventory);
 			
 			roundEnd = false;
 			buildRoundEnd();
@@ -86,6 +95,11 @@ package    {
 			backgroundSprite = new FlxSprite(0,0);
 			backgroundSprite.loadGraphic(ImgBackground, true, true, levelSizeX, levelSizeY);	
 			PlayState.groupBackground.add(backgroundSprite);
+			
+			var foregroundSprite:FlxSprite;
+			foregroundSprite = new FlxSprite(0,0);
+			foregroundSprite.loadGraphic(ImgForeground, true, true, levelSizeX, levelSizeY);	
+			PlayState.groupLevelForeground.add(foregroundSprite);
 		}
 		
 		override public function update():void

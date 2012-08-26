@@ -81,7 +81,7 @@ package
 				play("on");
 				if( _player.overlaps( this ) )
 				{
-					if( FlxG.keys.DOWN )
+					if( FlxG.keys.DOWN ||  FlxG.keys.S )
 					{
 						if( !digging )
 						{

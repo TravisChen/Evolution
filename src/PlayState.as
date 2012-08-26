@@ -9,8 +9,11 @@ package
 		public static var groupBackground:FlxGroup;
 		public static var groupTilemap:FlxGroup;
 		public static var groupCollects:FlxGroup;
+		public static var groupLevelForeground:FlxGroup;
 		public static var groupPlayer:FlxGroup;
 		public static var groupForeground:FlxGroup;
+		
+		public var cursor:AnimatedCursor;
 		
 		function PlayState():void
 		{
@@ -20,16 +23,18 @@ package
 			groupTilemap = new FlxGroup;
 			groupPlayer = new FlxGroup;
 			groupCollects = new FlxGroup;
+			groupLevelForeground = new FlxGroup;
 			groupForeground = new FlxGroup;
 			
 			// Create the level
 			var currLevelClass:Class = levelArray[Evolution.currLevelIndex];
 			_currLevel = new currLevelClass( groupBackground );
-
+			
 			this.add(groupBackground);
 			this.add(groupTilemap);
 			this.add(groupPlayer);
-			this.add(groupCollects)
+			this.add(groupCollects);
+			this.add(groupLevelForeground);
 			this.add(groupForeground);
 		}
 		

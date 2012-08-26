@@ -34,18 +34,18 @@ package
 		{
 			//MOVEMENT
 			acceleration.x = 0;
-			if(FlxG.keys.LEFT)
+			if(FlxG.keys.LEFT || FlxG.keys.A)
 			{
 				facing = LEFT;
 				acceleration.x -= drag.x;
 			}
-			else if(FlxG.keys.RIGHT)
+			else if(FlxG.keys.RIGHT || FlxG.keys.D)
 			{
 				facing = RIGHT;
 				acceleration.x += drag.x;
 			}
 			
-			if( FlxG.keys.UP )
+			if( FlxG.keys.UP || FlxG.keys.W)
 			{
 				if( !velocity.y && !jumping )
 					velocity.y = -jumpPower;
