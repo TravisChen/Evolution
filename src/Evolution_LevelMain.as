@@ -31,7 +31,7 @@ package    {
 			
 			super();
 			
-			levelSizeX = 640;
+			levelSizeX = 714;
 			levelSizeY = 128;
 			
 			// Tilemap
@@ -45,11 +45,20 @@ package    {
 			player = new Player(100,72);
 			PlayState.groupPlayer.add(player);
 
+			// Inventory
+			inventory = new Inventory(FlxG.width - 76,FlxG.height - 76);
+			inventory.scrollFactor.x = inventory.scrollFactor.y = 0;
+			PlayState.groupForeground.add(inventory);
+			
 			// Create collect
-			var skull:Skull = new Skull(200, FlxG.height - 40, player, PlayState.groupForeground, tilemap);
-			var skull2:Skull = new Skull(80, FlxG.height - 40, player, PlayState.groupForeground, tilemap);
+			var skull:Skull = new Skull(200, FlxG.height - 40, player, PlayState.groupForeground, tilemap, inventory);
+			var skull2:Skull = new Skull(80, FlxG.height - 40, player, PlayState.groupForeground, tilemap, inventory);
+			var skull3:Skull = new Skull(120, FlxG.height - 40, player, PlayState.groupForeground, tilemap, inventory);
+			var skull4:Skull = new Skull(240, FlxG.height - 40, player, PlayState.groupForeground, tilemap, inventory);
 			PlayState.groupCollects.add(skull);
 			PlayState.groupCollects.add(skull2);
+			PlayState.groupCollects.add(skull3);
+			PlayState.groupCollects.add(skull4);
 			
 			// Timer
 			timer = MAX_TIME;
@@ -64,11 +73,7 @@ package    {
 			pointsText.scrollFactor.x = pointsText.scrollFactor.y = 0;
 			PlayState.groupForeground.add(pointsText);
 			
-			// Inventory
-			inventory = new Inventory(FlxG.width - 76,FlxG.height - 76);
-			inventory.scrollFactor.x = inventory.scrollFactor.y = 0;
-			PlayState.groupForeground.add(inventory);
-			
+
 			roundEnd = false;
 			buildRoundEnd();
 			

@@ -8,9 +8,10 @@ package
 		[Embed(source="../data/particles.png")] private var ImgParticle:Class;
 		
 		private var _player:Player;
-		
 		private var _particle:FlxEmitter;
 		private var _tilemap:FlxTilemap;
+		private var _inventory:Inventory;
+		
 		public const EXPLOSION_SPEED:Number = 45;
 		public const NUM_PARTICLES:Number = 64;
 		public var collected:Boolean;
@@ -22,12 +23,13 @@ package
 		public const DOWN_TIME:Number = 0.5;
 		public const DIGS_TO_COLLECT:uint = 8;
 		
-		public function Skull( X:Number,Y:Number, player:Player, groupCollect:FlxGroup, tilemap:FlxTilemap ):void
+		public function Skull( X:Number,Y:Number, player:Player, groupCollect:FlxGroup, tilemap:FlxTilemap, inventory:Inventory ):void
 		{
 			super(X,Y);
 			
 			_player = player;
 			_tilemap = tilemap;
+			_inventory = inventory
 			collected = false;
 			digging = false;
 			numDigs = 0;
@@ -107,6 +109,7 @@ package
 				{
 					collected = true;
 					visible = false;
+					_inventory.addItem();
 				}
 			}
 			super.update();
