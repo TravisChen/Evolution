@@ -45,6 +45,11 @@ package
 			right = false;
 			left = false;
 			
+			if( !PlayState._currLevel.player )
+			{
+				return;
+			}
+			
 			if( PlayState._currLevel.player.x >= x )
 				right = true;
 			else
