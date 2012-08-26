@@ -8,6 +8,8 @@ package
 		private var jumpPower:int;
 		private var jumping:Boolean;
 		public var digging:Boolean;
+		public var landing:Boolean;
+		public var lastVelocityY:Number;
 
 		public function Player(X:int,Y:int)
 		{
@@ -22,6 +24,8 @@ package
 			jumping = false;
 			digging = false;
 			
+			lastVelocityY = velocity.y;
+			
 			//basic player physics
 			var runSpeed:uint = 140;
 			drag.x = runSpeed*8;
@@ -33,11 +37,22 @@ package
 			addAnimation("idle", [0]);
 			addAnimation("run", [1,2,3,4], 18);
 			addAnimation("dig", [5,6,7], 32);
-			addAnimation("jump", [8,9,10], 18 ,false);
+			addAnimation("jump", [8,9,10], 18, false);
+			addAnimation("land", [8], 20);
 		}
 
 		override public function update():void
 		{
+			if( landing ) 
+			{
+				play("land");
+				if(finished)
+				{
+					landing = false;					
+				}
+				return;
+			}
+			
 			if( digging ) 
 			{
 				play("dig");
@@ -85,6 +100,16 @@ package
 				{
 					play("run");
 				}
+			}
+
+			if( lastVelocityY != 0 && velocity.y == 0 )
+			{
+				landing = true;
+				lastVelocityY = 0;		
+			}
+			else
+			{
+				lastVelocityY = velocity.y;
 			}
 			
 			//UPDATE POSITION AND ANIMATION

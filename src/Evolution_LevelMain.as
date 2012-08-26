@@ -15,11 +15,14 @@ package    {
 		[Embed(source='../data/Tilemaps/map-tiles.png')] private var ImgTiles:Class;
 		[Embed(source='../data/Tilemaps/MapCSV_Evolution_Boundary.txt',mimeType="application/octet-stream")] private var TxtMap:Class;
 		[Embed(source='../data/Tilemaps/MapCSV_Evolution_Platforms.txt',mimeType="application/octet-stream")] private var TxtMapPlatforms:Class;
+		[Embed(source='../data/Tilemaps/MapCSV_Evolution_HUD.txt',mimeType="application/octet-stream")] private var TxtHudMap:Class;
 		
 		private var pointsText:FlxText;
 		
 		private var tilemap:FlxTilemap;
 		private var platformsTilemap:FlxTilemap;
+		private var hudTilemap:FlxTilemap;
+		
 		private var timer:Number;
 		private var timerText:FlxText;
 
@@ -52,6 +55,11 @@ package    {
 			PlayState.groupTilemap.add(platformsTilemap);
 			platformsTilemap.follow();
 			
+			hudTilemap = new FlxTilemap();
+			hudTilemap.loadMap(new TxtHudMap,ImgTiles,8);
+			hudTilemap.visible = false;
+			PlayState.groupTilemap.add(hudTilemap);
+
 			// Create player
 			player = new Player(FlxG.width/2,FlxG.height - 40);
 			PlayState.groupPlayer.add(player);
@@ -61,7 +69,7 @@ package    {
 			PlayState.groupPlayer.add(enemy);
 
 			// Inventory
-			inventory = new Inventory(FlxG.width - 76,FlxG.height - 76);
+			inventory = new Inventory(FlxG.width - 76,FlxG.height - 76, hudTilemap);
 			inventory.scrollFactor.x = inventory.scrollFactor.y = 0;
 			PlayState.groupForeground.add(inventory);
 			
@@ -144,6 +152,7 @@ package    {
 			{
 				FlxG.collide(platformsTilemap,player);
 			}
+			hudTilemap.x = FlxG.camera.scroll.x;
 			FlxG.collide(tilemap,player);
 			FlxG.collide(tilemap,enemy);
 			FlxG.collide(player,enemy);

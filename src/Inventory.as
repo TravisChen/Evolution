@@ -12,6 +12,8 @@ package
 		
 		public const TEXT_COLOR:uint = 0xFF555555;
 		
+		private var _hudTilemap:FlxTilemap;
+		
 		public var inventoryArray:Array; 
 		public var sequencerArray:Array;
 		
@@ -25,8 +27,12 @@ package
 		public var twoPressed:Boolean;
 		public var threePressed:Boolean;
 		
-		public function Inventory(X:int,Y:int)
+		public var inventoryDisabledTime:Number;
+		
+		public function Inventory(X:int,Y:int,hudTilemap:FlxTilemap)
 		{
+			_hudTilemap = hudTilemap;
+			
 			super(X,Y);
 			loadGraphic(imgInventory, true, true, 74, 74);
 		
@@ -34,6 +40,7 @@ package
 			sequencerArray = new Array();
 			
 			sevenPressed = false;
+			inventoryDisabledTime = 0.0;
 			
 			createItems();
 			createSequencer();
@@ -98,7 +105,6 @@ package
 			{
 				goodSequence = false;
 			}
-
 			
 			if( goodSequence )
 			{
@@ -111,8 +117,10 @@ package
 			}
 			
 			for (var i:int = 0; i < sequencerArray.length; i++) {
-				sequencerArray[i].clearItem();	
+				sequencerArray[i].sequencerClearItem( goodSequence );	
 			}
+			
+			inventoryDisabledTime = 0.5
 		}
 		
 		public function createSequencer():void
@@ -127,7 +135,7 @@ package
 			
 			for (var i:int = 0; i < 3; i++) {
 				var skull:SkullInventoryItem;
-				skull = new SkullInventoryItem(0,0);
+				skull = new SkullInventoryItem(0,0,true,_hudTilemap);
 				skull.scrollFactor.x = skull.scrollFactor.y = 0;
 				skull.y = sequencer.y + 4;
 				skull.x = sequencer.x + i*22 + 4 + 3*i;
@@ -151,7 +159,7 @@ package
 					PlayState.groupForegroundHigh.add(timerText);
 					
 					var skull:SkullInventoryItem;
-					skull = new SkullInventoryItem(0,0);
+					skull = new SkullInventoryItem(0,0,false,_hudTilemap);
 					skull.scrollFactor.x = skull.scrollFactor.y = 0;
 					skull.y = this.y + i*22 + 4 + 3*i;
 					skull.x = this.x + j*22 + 4 + 3*j;
@@ -166,6 +174,12 @@ package
 		
 		override public function update():void
 		{	
+			if( inventoryDisabledTime > 0 )
+			{
+				inventoryDisabledTime -= FlxG.elapsed;
+				return;
+			}
+			
 			checkButton( FlxG.keys.NUMPADSEVEN, FlxG.keys.SEVEN, 0, sevenPressed );
 			checkButton( FlxG.keys.NUMPADEIGHT, FlxG.keys.EIGHT, 1, eightPressed );
 			checkButton( FlxG.keys.NUMPADNINE, FlxG.keys.NINE, 2, ninePressed );

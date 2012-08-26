@@ -22,6 +22,8 @@ package
 		public const EXPLOSION_SPEED:Number = 45;
 		public const NUM_PARTICLES:Number = 64;
 		public var collected:Boolean;
+		public var collectedTime:Number;
+		public var collectedHoldTime:Number;
 
 		public var digging:Boolean;
 		public var numDigs:uint;
@@ -30,6 +32,7 @@ package
 		public const DOWN_TIME:Number = 0.5;
 		public const DIGS_TO_COLLECT:uint = 4;
 		public const DIG_Y:uint = 4;
+		public const COLLECTED_TIME:Number = 0.75;
 		
 		public function Skull( X:Number,Y:Number, player:Player, groupCollect:FlxGroup, tilemap:FlxTilemap, inventory:Inventory, skullSpawner:SkullSpawner, type:uint ):void
 		{
@@ -41,10 +44,13 @@ package
 			_skullSpawner = skullSpawner;
 			skullType = type;
 				
-			collected = false;
 			digging = false;
 			numDigs = 0;
 			downTimer = DOWN_TIME;
+			
+			collected = false;
+			collectedTime = COLLECTED_TIME;
+			collectedHoldTime = 0.25;
 			
 			width = 12;
 			height = 32;
@@ -95,61 +101,84 @@ package
 		
 		
 		override public function update():void
-		{		
-			if( y > FlxG.height - 40 )
-			{
-				y -= 0.5;	
-			}
-			
+		{
 			// Collide
 			FlxG.collide(_tilemap,_particle);
 			_particle.update();
+
+			if( collected )
+			{
+				if( y > FlxG.height - 90 )
+				{
+					y -= 5.0;
+				}
+				else
+				{
+					collectedHoldTime -= FlxG.elapsed;
+					if( collectedHoldTime <= 0 )
+					{
+						alpha -= 0.05;
+					}
+				}
+				collectedTime -= FlxG.elapsed;
+				if( collectedTime <= 0 )
+				{
+					// Collect item, kill
+					_particle.kill();
+					kill();
+				}
+				
+				return;
+			}
 			
+			// Initial rise			
+			if( y > FlxG.height - 40 )
+			{
+				y -= 0.5;	
+			}			
 			downTimer -=  FlxG.elapsed;
 			
+			// Rise
 			if( downTimer <= 0 && numDigs > 0 )
 			{
 				downTimer = DOWN_TIME; 
 				numDigs --;
 				y += DIG_Y;	
 			}
-				
-			if(!collected)
+
+			// Dig
+			if( _player.overlaps( this ) )
 			{
-				play("on");
-				if( _player.overlaps( this ) )
+				if( FlxG.keys.DOWN ||  FlxG.keys.S )
 				{
-					if( FlxG.keys.DOWN ||  FlxG.keys.S )
+					if( !digging )
 					{
-						if( !digging )
-						{
-							dig();
-							y -= DIG_Y;
-							downTimer = DOWN_TIME; 
-							numDigs++;
-						}
-						digging = true;
+						dig();
+						y -= DIG_Y;
+						downTimer = DOWN_TIME; 
+						numDigs++;
 					}
-					else
-					{
-						digging = false;
-					}
-					
-					alpha = 1.0;
+					digging = true;
 				}
 				else
 				{
-					alpha = 0.5;
+					digging = false;
 				}
 				
-				if( numDigs >= DIGS_TO_COLLECT )
-				{
-					collected = true;
-					_inventory.addItem( skullType );
-					_skullSpawner.removeSkull( this );
-					kill();
-				}
+				alpha = 1.0;
 			}
+			else
+			{
+				alpha = 0.5;
+			}
+			
+			if( numDigs >= DIGS_TO_COLLECT )
+			{
+				_inventory.addItem( skullType );
+				_skullSpawner.removeSkull( this );
+				collected = true;
+			}
+			
 			super.update();
 		}
 	}
