@@ -4,6 +4,8 @@ package    {
 	
 	public class Evolution_LevelMain extends Level{
 		
+		[Embed(source = '../data/Audio/evolution.mp3')] private var SndEvolutionSong:Class;
+		
 		[Embed(source = '../data/sky.png')] private var ImgSky:Class;
 		[Embed(source = '../data/clouds1.png')] private var ImgClouds1:Class;
 		[Embed(source = '../data/clouds2.png')] private var ImgClouds2:Class;
@@ -32,12 +34,12 @@ package    {
 		
 		private var inventory:Inventory;
 		
-		public const MAX_TIME:uint = 60;
+		public const MAX_TIME:uint = 120;
 		public const TEXT_COLOR:uint = 0xFFF8CA00;
 		
+		public var sound:FlxSound;
+		
 		public function Evolution_LevelMain( group:FlxGroup ) {
-			
-			super();
 			
 			levelSizeX = 714;
 			levelSizeY = 128;
@@ -94,6 +96,10 @@ package    {
 			buildRoundEnd();
 			
 			createForegroundAndBackground();
+			
+			FlxG.playMusic(SndEvolutionSong,1.0);
+			
+			super();
 		}
 		
 		public function buildRoundEnd():void {
