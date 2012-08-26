@@ -7,6 +7,7 @@ package
 		[Embed(source="data/darwin.png")] private var ImgDarwn:Class;
 		private var jumpPower:int;
 		private var jumping:Boolean;
+		public var digging:Boolean;
 
 		public function Player(X:int,Y:int)
 		{
@@ -19,9 +20,10 @@ package
 			offset.x = 8;
 			offset.y = 16;
 			jumping = false;
+			digging = false;
 			
 			//basic player physics
-			var runSpeed:uint = 120;
+			var runSpeed:uint = 140;
 			drag.x = runSpeed*8;
 			acceleration.y = 420;
 			jumpPower = 180;
@@ -29,11 +31,22 @@ package
 			maxVelocity.y = jumpPower;
 				
 			addAnimation("idle", [0]);
-			addAnimation("run", [1,2,3,4], 16);
+			addAnimation("run", [1,2,3,4], 18);
+			addAnimation("dig", [5,6,7], 32);
 		}
 
 		override public function update():void
 		{
+			if( digging ) 
+			{
+				play("dig");
+				if(finished)
+				{
+					digging = false;					
+				}
+				return;
+			}
+			
 			//MOVEMENT
 			acceleration.x = 0;
 			if(FlxG.keys.LEFT || FlxG.keys.A)

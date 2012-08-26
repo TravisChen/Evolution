@@ -45,7 +45,7 @@ package    {
 			tilemap.follow();
 			
 			// Create player
-			player = new Player(100,72);
+			player = new Player(FlxG.width/2,FlxG.height - 40);
 			PlayState.groupPlayer.add(player);
 
 			// Inventory
@@ -98,7 +98,7 @@ package    {
 
 			var clouds1:FlxSprite;
 			clouds1 = new FlxSprite(0,0);
-			clouds1.scrollFactor.x = clouds1.scrollFactor.y = 0.1;
+			clouds1.scrollFactor.x = clouds1.scrollFactor.y = 0.3;
 			clouds1.loadGraphic(ImgClouds1, true, true, levelSizeX, levelSizeY);	
 			PlayState.groupClouds.add(clouds1);
 			
@@ -110,7 +110,7 @@ package    {
 			
 			var clouds3:FlxSprite;
 			clouds3 = new FlxSprite(0,0);
-			clouds3.scrollFactor.x = clouds3.scrollFactor.y = 0.3;
+			clouds3.scrollFactor.x = clouds3.scrollFactor.y = 0.1;
 			clouds3.loadGraphic(ImgClouds3, true, true, levelSizeX, levelSizeY);	
 			PlayState.groupClouds.add(clouds3);
 			

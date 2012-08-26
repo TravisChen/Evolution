@@ -91,6 +91,7 @@ package
 			_particle.setYSpeed(-50, -80);
 
 			_particle.on = true;
+			_player.digging = true;
 		}
 		
 		
