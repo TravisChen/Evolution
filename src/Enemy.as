@@ -12,7 +12,7 @@ package
 		public var right:Boolean;
 
 		public const WALK_SPEED:Number = 40;
-		public const RUN_SPEED:Number = 84;
+		public const RUN_SPEED:Number = 72;
 		
 		public function Enemy(X:int,Y:int)
 		{
@@ -70,7 +70,7 @@ package
 			}
 			else
 			{
-				if( Math.abs( PlayState._currLevel.player.x - x ) < 100 )
+				if( Math.abs( PlayState._currLevel.player.x - x ) < 80 )
 				{
 					drag.x = RUN_SPEED*8;
 					play("run");	

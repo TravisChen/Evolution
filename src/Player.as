@@ -33,6 +33,7 @@ package
 			addAnimation("idle", [0]);
 			addAnimation("run", [1,2,3,4], 18);
 			addAnimation("dig", [5,6,7], 32);
+			addAnimation("jump", [8,9,10], 18 ,false);
 		}
 
 		override public function update():void
@@ -63,24 +64,29 @@ package
 			if( FlxG.keys.UP || FlxG.keys.W)
 			{
 				if( !velocity.y && !jumping )
+				{
+					play("jump");
 					velocity.y = -jumpPower;
+				}
 				jumping = true;
 			}
 			else
 			{
 				jumping = false;
 			}
-			
-			//ANIMATION
-			if(velocity.x == 0)
-			{
-				play("idle");
-			}
-			else
-			{
-				play("run");
-			}
 
+			if( !velocity.y )
+			{
+				if(velocity.x == 0)
+				{
+					play("idle");
+				}
+				else
+				{
+					play("run");
+				}
+			}
+			
 			//UPDATE POSITION AND ANIMATION
 			super.update();
 		}
