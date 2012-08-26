@@ -5,7 +5,8 @@ package    {
 	public class Level {
 		
 		public var player:Player;
-
+		public var enemy:Enemy;
+		
 		public var levelSizeX:Number = 0;
 		public var levelSizeY:Number = 0;
 		public var points:Number = 0;

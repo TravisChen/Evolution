@@ -23,7 +23,6 @@ package
 		public const NUM_PARTICLES:Number = 64;
 		public var collected:Boolean;
 
-		
 		public var digging:Boolean;
 		public var numDigs:uint;
 		public var downTimer:Number;

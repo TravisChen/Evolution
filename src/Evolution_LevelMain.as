@@ -48,6 +48,10 @@ package    {
 			player = new Player(FlxG.width/2,FlxG.height - 40);
 			PlayState.groupPlayer.add(player);
 
+			// Create player
+			enemy = new Enemy(FlxG.width/4,FlxG.height - 40);
+			PlayState.groupPlayer.add(enemy);
+
 			// Inventory
 			inventory = new Inventory(FlxG.width - 76,FlxG.height - 76);
 			inventory.scrollFactor.x = inventory.scrollFactor.y = 0;
@@ -132,6 +136,8 @@ package    {
 			{
 				FlxG.collide(tilemap,player);
 			}
+			FlxG.collide(tilemap,enemy);
+			FlxG.collide(player,enemy);
 			
 			// Timer
 			var minutes:uint = timer/60;
