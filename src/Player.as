@@ -21,7 +21,7 @@ package
 			jumping = false;
 			
 			//basic player physics
-			var runSpeed:uint = 80;
+			var runSpeed:uint = 120;
 			drag.x = runSpeed*8;
 			acceleration.y = 420;
 			jumpPower = 180;
@@ -29,6 +29,7 @@ package
 			maxVelocity.y = jumpPower;
 				
 			addAnimation("idle", [0]);
+			addAnimation("run", [1,2,3,4], 16);
 		}
 
 		override public function update():void
@@ -61,6 +62,10 @@ package
 			if(velocity.x == 0)
 			{
 				play("idle");
+			}
+			else
+			{
+				play("run");
 			}
 
 			//UPDATE POSITION AND ANIMATION

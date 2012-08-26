@@ -96,6 +96,11 @@ package
 		
 		override public function update():void
 		{		
+			if( y > FlxG.height - 40 )
+			{
+				y -= 0.5;	
+			}
+			
 			// Collide
 			FlxG.collide(_tilemap,_particle);
 			_particle.update();

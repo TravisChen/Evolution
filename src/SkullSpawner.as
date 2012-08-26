@@ -36,7 +36,7 @@ package
 		public function addSkull():void
 		{
 			var x:uint = Math.floor(Math.random() * 540) + 40;
-			var y:uint = FlxG.height - 40;
+			var y:uint = FlxG.height;
 			
 			// Too close, try again
 			if( isNearby(x) )
