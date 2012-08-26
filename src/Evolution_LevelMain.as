@@ -33,7 +33,6 @@ package    {
 			
 			levelSizeX = 640;
 			levelSizeY = 128;
-			endX = 275;
 			
 			// Tilemap
 			tilemap = new FlxTilemap();
@@ -66,7 +65,7 @@ package    {
 			PlayState.groupForeground.add(pointsText);
 			
 			// Inventory
-			inventory = new Inventory(FlxG.width - 56,FlxG.height - 56);
+			inventory = new Inventory(FlxG.width - 76,FlxG.height - 76);
 			inventory.scrollFactor.x = inventory.scrollFactor.y = 0;
 			PlayState.groupForeground.add(inventory);
 			

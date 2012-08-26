@@ -12,6 +12,7 @@ package
 		public static var groupLevelForeground:FlxGroup;
 		public static var groupPlayer:FlxGroup;
 		public static var groupForeground:FlxGroup;
+		public static var groupForegroundHigh:FlxGroup;
 		
 		public var cursor:AnimatedCursor;
 		
@@ -25,6 +26,7 @@ package
 			groupCollects = new FlxGroup;
 			groupLevelForeground = new FlxGroup;
 			groupForeground = new FlxGroup;
+			groupForegroundHigh = new FlxGroup;
 			
 			// Create the level
 			var currLevelClass:Class = levelArray[Evolution.currLevelIndex];
@@ -36,6 +38,7 @@ package
 			this.add(groupCollects);
 			this.add(groupLevelForeground);
 			this.add(groupForeground);
+			this.add(groupForegroundHigh);
 		}
 		
 		override public function update():void
@@ -44,6 +47,7 @@ package
 			if( _currLevel.player != null )
 			{
 				FlxG.camera.follow(_currLevel.player, FlxCamera.STYLE_PLATFORMER);
+				FlxG.camera.width = FlxG.width;
 				FlxG.camera.setBounds(0,0,_currLevel.levelSizeX,_currLevel.levelSizeY);
 			}
 			

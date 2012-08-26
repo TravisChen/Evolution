@@ -8,9 +8,7 @@ package    {
 
 		public var levelSizeX:Number = 0;
 		public var levelSizeY:Number = 0;
-		public var groundY:Number = 0;
-		public var endX:Number = 0;
-		
+
 		public function update():void
 		{
 			
@@ -18,10 +16,6 @@ package    {
 		
 		public function nextLevel():Boolean
 		{
-			if( player.x >= endX )
-			{
-				return true;
-			}
 			return false;
 		}
 		

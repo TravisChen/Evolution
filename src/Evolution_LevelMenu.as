@@ -12,7 +12,6 @@ package    {
 			
 			levelSizeX = 320;
 			levelSizeY = 128;
-			groundY = 0;
 			
 			createForegroundAndBackground();
 		}

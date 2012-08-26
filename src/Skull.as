@@ -4,7 +4,7 @@ package
 	
 	public class Skull extends FlxSprite
 	{
-		[Embed(source='../data/skull.png')] private var ImgCollect:Class;
+		[Embed(source='../data/skull1.png')] private var ImgCollect:Class;
 		[Embed(source="../data/particles.png")] private var ImgParticle:Class;
 		
 		private var _player:Player;
@@ -37,8 +37,7 @@ package
 			height = 32;
 			offset.y = -16;
 			
-			loadGraphic(ImgCollect, true, true, 12, 15);
-			
+			loadGraphic(ImgCollect, true, true, 16, 16);
 			alpha = 0.5;
 			
 			// Add gibs
