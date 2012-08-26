@@ -55,6 +55,7 @@ package    {
 			
 			// Create skull spawner
 			var skullSpawner:SkullSpawner = new SkullSpawner( player, tilemap, inventory);
+			PlayState.groupCollects.add(skullSpawner);
 			
 			// Timer
 			timer = MAX_TIME;

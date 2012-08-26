@@ -16,6 +16,7 @@ package
 		private var _particle:FlxEmitter;
 		private var _tilemap:FlxTilemap;
 		private var _inventory:Inventory;
+		private var _skullSpawner:SkullSpawner;
 		public var skullType:uint;
 		
 		public const EXPLOSION_SPEED:Number = 45;
@@ -31,13 +32,14 @@ package
 		public const DIGS_TO_COLLECT:uint = 4;
 		public const DIG_Y:uint = 4;
 		
-		public function Skull( X:Number,Y:Number, player:Player, groupCollect:FlxGroup, tilemap:FlxTilemap, inventory:Inventory, type:uint ):void
+		public function Skull( X:Number,Y:Number, player:Player, groupCollect:FlxGroup, tilemap:FlxTilemap, inventory:Inventory, skullSpawner:SkullSpawner, type:uint ):void
 		{
 			super(X,Y);
 			
 			_player = player;
 			_tilemap = tilemap;
 			_inventory = inventory;
+			_skullSpawner = skullSpawner;
 			skullType = type;
 				
 			collected = false;
@@ -139,6 +141,7 @@ package
 				{
 					collected = true;
 					_inventory.addItem( skullType );
+					_skullSpawner.removeSkull( this );
 					kill();
 				}
 			}

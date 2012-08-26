@@ -41,13 +41,27 @@ package
 		
 		public function addItem( type:uint ):void
 		{
+			var inventoryFull:Boolean = true;
 			for (var i:int = 0; i < inventoryArray.length; i++) {
 				if( !inventoryArray[i].hasItem )
 				{
+					inventoryFull = false;
 					inventoryArray[i].setItem( type );
 					break;
 				}
 			}
+			
+			if( inventoryFull )
+			{
+				var typeSave:uint = type;
+				for (var j:int = 0; j < inventoryArray.length; j++) 
+				{
+					typeSave = inventoryArray[j].skullType;
+					inventoryArray[j].setItem( type );
+					type = typeSave;
+				}
+			}
+			
 			
 			PlayState._currLevel.points += 100;
 		}
