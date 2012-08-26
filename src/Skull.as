@@ -4,32 +4,42 @@ package
 	
 	public class Skull extends FlxSprite
 	{
-		[Embed(source='../data/skull1.png')] private var ImgCollect:Class;
+		[Embed(source='../data/skull1.png')] private var ImgSkull1:Class;
+		[Embed(source='../data/skull2.png')] private var ImgSkull2:Class;
+		[Embed(source='../data/skull3.png')] private var ImgSkull3:Class;
+		[Embed(source='../data/skull4.png')] private var ImgSkull4:Class;
+		[Embed(source='../data/skull5.png')] private var ImgSkull5:Class;
+		[Embed(source='../data/skull6.png')] private var ImgSkull6:Class;
 		[Embed(source="../data/particles.png")] private var ImgParticle:Class;
 		
 		private var _player:Player;
 		private var _particle:FlxEmitter;
 		private var _tilemap:FlxTilemap;
 		private var _inventory:Inventory;
+		public var skullType:uint;
 		
 		public const EXPLOSION_SPEED:Number = 45;
 		public const NUM_PARTICLES:Number = 64;
 		public var collected:Boolean;
+
 		
 		public var digging:Boolean;
 		public var numDigs:uint;
 		public var downTimer:Number;
 		
 		public const DOWN_TIME:Number = 0.5;
-		public const DIGS_TO_COLLECT:uint = 8;
+		public const DIGS_TO_COLLECT:uint = 4;
+		public const DIG_Y:uint = 4;
 		
-		public function Skull( X:Number,Y:Number, player:Player, groupCollect:FlxGroup, tilemap:FlxTilemap, inventory:Inventory ):void
+		public function Skull( X:Number,Y:Number, player:Player, groupCollect:FlxGroup, tilemap:FlxTilemap, inventory:Inventory, type:uint ):void
 		{
 			super(X,Y);
 			
 			_player = player;
 			_tilemap = tilemap;
-			_inventory = inventory
+			_inventory = inventory;
+			skullType = type;
+				
 			collected = false;
 			digging = false;
 			numDigs = 0;
@@ -39,7 +49,27 @@ package
 			height = 32;
 			offset.y = -16;
 			
-			loadGraphic(ImgCollect, true, true, 16, 16);
+			switch (skullType){
+				case 0:
+					loadGraphic(ImgSkull1, true, true, 16, 16);
+					break;
+				case 1:
+					loadGraphic(ImgSkull2, true, true, 16, 16);
+					break;
+				case 2:
+					loadGraphic(ImgSkull3, true, true, 16, 16);
+					break;
+				case 3:
+					loadGraphic(ImgSkull4, true, true, 16, 16);
+					break;
+				case 4:
+					loadGraphic(ImgSkull5, true, true, 16, 16);
+					break;
+				case 5:
+					loadGraphic(ImgSkull6, true, true, 16, 16);
+					break;
+			}
+
 			alpha = 0.5;
 			
 			// Add gibs
@@ -74,7 +104,7 @@ package
 			{
 				downTimer = DOWN_TIME; 
 				numDigs --;
-				y += 2;	
+				y += DIG_Y;	
 			}
 				
 			if(!collected)
@@ -87,7 +117,7 @@ package
 						if( !digging )
 						{
 							dig();
-							y -= 2;
+							y -= DIG_Y;
 							downTimer = DOWN_TIME; 
 							numDigs++;
 						}
@@ -108,8 +138,8 @@ package
 				if( numDigs >= DIGS_TO_COLLECT )
 				{
 					collected = true;
-					visible = false;
-					_inventory.addItem();
+					_inventory.addItem( skullType );
+					kill();
 				}
 			}
 			super.update();

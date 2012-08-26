@@ -4,6 +4,10 @@ package    {
 	
 	public class Evolution_LevelMain extends Level{
 		
+		[Embed(source = '../data/sky.png')] private var ImgSky:Class;
+		[Embed(source = '../data/clouds1.png')] private var ImgClouds1:Class;
+		[Embed(source = '../data/clouds2.png')] private var ImgClouds2:Class;
+		[Embed(source = '../data/clouds3.png')] private var ImgClouds3:Class;
 		[Embed(source = '../data/stage.png')] private var ImgBackground:Class;
 		[Embed(source = '../data/grass.png')] private var ImgForeground:Class;
 		[Embed(source='../data/inventory.png')] private var ImgInventory:Class;
@@ -11,7 +15,6 @@ package    {
 		[Embed(source='../data/Tilemaps/map-tiles.png')] private var ImgTiles:Class;
 		[Embed(source='../data/Tilemaps/MapCSV_Evolution_Boundary.txt',mimeType="application/octet-stream")] private var TxtMap:Class;
 		
-		private var points:Number;
 		private var pointsText:FlxText;
 		
 		private var tilemap:FlxTilemap;
@@ -50,15 +53,8 @@ package    {
 			inventory.scrollFactor.x = inventory.scrollFactor.y = 0;
 			PlayState.groupForeground.add(inventory);
 			
-			// Create collect
-			var skull:Skull = new Skull(200, FlxG.height - 40, player, PlayState.groupForeground, tilemap, inventory);
-			var skull2:Skull = new Skull(80, FlxG.height - 40, player, PlayState.groupForeground, tilemap, inventory);
-			var skull3:Skull = new Skull(120, FlxG.height - 40, player, PlayState.groupForeground, tilemap, inventory);
-			var skull4:Skull = new Skull(240, FlxG.height - 40, player, PlayState.groupForeground, tilemap, inventory);
-			PlayState.groupCollects.add(skull);
-			PlayState.groupCollects.add(skull2);
-			PlayState.groupCollects.add(skull3);
-			PlayState.groupCollects.add(skull4);
+			// Create skull spawner
+			var skullSpawner:SkullSpawner = new SkullSpawner( player, tilemap, inventory);
 			
 			// Timer
 			timer = MAX_TIME;
@@ -67,13 +63,12 @@ package    {
 			timerText.scrollFactor.x = timerText.scrollFactor.y = 0;
 			PlayState.groupForeground.add(timerText);
 			
-			points = MAX_TIME;
+			points = 0;
 			pointsText = new FlxText(0, 0, FlxG.width, "0");
 			pointsText.setFormat(null,16,TEXT_COLOR,"right");
 			pointsText.scrollFactor.x = pointsText.scrollFactor.y = 0;
 			PlayState.groupForeground.add(pointsText);
 			
-
 			roundEnd = false;
 			buildRoundEnd();
 			
@@ -95,10 +90,33 @@ package    {
 		}
 		
 		public function createForegroundAndBackground():void {
+			var skySprite:FlxSprite;
+			skySprite = new FlxSprite(0,0);
+			skySprite.loadGraphic(ImgSky, true, true, levelSizeX, levelSizeY);	
+			PlayState.groupBackground.add(skySprite);
+
+			var clouds1:FlxSprite;
+			clouds1 = new FlxSprite(0,0);
+			clouds1.scrollFactor.x = clouds1.scrollFactor.y = 0.1;
+			clouds1.loadGraphic(ImgClouds1, true, true, levelSizeX, levelSizeY);	
+			PlayState.groupClouds.add(clouds1);
+			
+			var clouds2:FlxSprite;
+			clouds2 = new FlxSprite(0,0);
+			clouds2.scrollFactor.x = clouds2.scrollFactor.y = 0.2;
+			clouds2.loadGraphic(ImgClouds2, true, true, levelSizeX, levelSizeY);	
+			PlayState.groupClouds.add(clouds2);
+			
+			var clouds3:FlxSprite;
+			clouds3 = new FlxSprite(0,0);
+			clouds3.scrollFactor.x = clouds3.scrollFactor.y = 0.3;
+			clouds3.loadGraphic(ImgClouds3, true, true, levelSizeX, levelSizeY);	
+			PlayState.groupClouds.add(clouds3);
+			
 			var backgroundSprite:FlxSprite;
 			backgroundSprite = new FlxSprite(0,0);
 			backgroundSprite.loadGraphic(ImgBackground, true, true, levelSizeX, levelSizeY);	
-			PlayState.groupBackground.add(backgroundSprite);
+			PlayState.groupTilemap.add(backgroundSprite);
 			
 			var foregroundSprite:FlxSprite;
 			foregroundSprite = new FlxSprite(0,0);
@@ -109,7 +127,10 @@ package    {
 		override public function update():void
 		{
 			// Collide
-			FlxG.collide(tilemap,player);
+			if( player.velocity.y >= 0 )
+			{
+				FlxG.collide(tilemap,player);
+			}
 			
 			// Timer
 			var minutes:uint = timer/60;
@@ -128,6 +149,9 @@ package    {
 				timerText.text = "" + minutes + ":0" + seconds;
 			else
 				timerText.text = "" + minutes + ":" + seconds;
+			
+			// Update points text
+			pointsText.text = "" + points;
 			
 			super.update();
 		}

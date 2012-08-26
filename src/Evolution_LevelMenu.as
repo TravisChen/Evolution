@@ -31,9 +31,6 @@ package    {
 			backgroundSprite = new FlxSprite(0,0);
 			backgroundSprite.loadGraphic(ImgBackground, true, true, levelSizeX, levelSizeY);	
 			PlayState.groupBackground.add(backgroundSprite);
-			
-//			var backgroundSprite:FlxSprite = new IntroSplash(0,0);
-//			PlayState.groupBackground.add(backgroundSprite);
 		}
 	}
 }

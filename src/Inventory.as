@@ -39,25 +39,65 @@ package
 			createSequencer();
 		}
 		
-		public function addItem():void
+		public function addItem( type:uint ):void
 		{
 			for (var i:int = 0; i < inventoryArray.length; i++) {
 				if( !inventoryArray[i].hasItem )
 				{
-					inventoryArray[i].hasItem = true;
-					return;
+					inventoryArray[i].setItem( type );
+					break;
+				}
+			}
+			
+			PlayState._currLevel.points += 100;
+		}
+		
+		public function addSequencerItem( type:uint ):void
+		{
+			for (var i:int = 0; i < sequencerArray.length; i++) {
+				if( !sequencerArray[i].hasItem )
+				{
+					sequencerArray[i].setItem( type );
+					if( i == 2 )
+					{
+						sequenceComplete();	
+					}
+					break;
 				}
 			}
 		}
 		
-		public function addSequencerItem():void
+		public function sequenceComplete():void
 		{
-			for (var i:int = 0; i < inventoryArray.length; i++) {
-				if( !sequencerArray[i].hasItem )
-				{
-					sequencerArray[i].hasItem = true;
-					return;
-				}
+			var goodSequence:Boolean = true;
+			if( sequencerArray[0].skullType != 0 && sequencerArray[0].skullType != 3 )
+			{
+				goodSequence = false;								
+			}
+			
+			if( sequencerArray[0].skullType + 1 != sequencerArray[1].skullType )
+			{
+				goodSequence = false;
+			}
+			
+			if( sequencerArray[1].skullType + 1 != sequencerArray[2].skullType )
+			{
+				goodSequence = false;
+			}
+
+			
+			if( goodSequence )
+			{
+				FlxG.flash(0xff00ff00, 0.75);
+				PlayState._currLevel.points += 1000;
+			}
+			else
+			{
+				FlxG.flash(0xffff0000, 0.75);
+			}
+			
+			for (var i:int = 0; i < sequencerArray.length; i++) {
+				sequencerArray[i].clearItem();	
 			}
 		}
 		
@@ -112,26 +152,26 @@ package
 		
 		override public function update():void
 		{	
-			checkButton( FlxG.keys.NUMPADSEVEN, 0, sevenPressed );
-			checkButton( FlxG.keys.NUMPADEIGHT, 1, eightPressed );
-			checkButton( FlxG.keys.NUMPADNINE, 2, ninePressed );
-			checkButton( FlxG.keys.NUMPADFOUR, 3, fourPressed );
-			checkButton( FlxG.keys.NUMPADFIVE, 4, fivePressed );
-			checkButton( FlxG.keys.NUMPADSIX, 5, sixPressed );
-			checkButton( FlxG.keys.NUMPADONE, 6, onePressed );
-			checkButton( FlxG.keys.NUMPADTWO, 7, twoPressed );
-			checkButton( FlxG.keys.NUMPADTHREE, 8, threePressed );
+			checkButton( FlxG.keys.NUMPADSEVEN, FlxG.keys.SEVEN, 0, sevenPressed );
+			checkButton( FlxG.keys.NUMPADEIGHT, FlxG.keys.EIGHT, 1, eightPressed );
+			checkButton( FlxG.keys.NUMPADNINE, FlxG.keys.NINE, 2, ninePressed );
+			checkButton( FlxG.keys.NUMPADFOUR, FlxG.keys.FOUR, 3, fourPressed );
+			checkButton( FlxG.keys.NUMPADFIVE, FlxG.keys.FIVE, 4, fivePressed );
+			checkButton( FlxG.keys.NUMPADSIX, FlxG.keys.SIX, 5, sixPressed );
+			checkButton( FlxG.keys.NUMPADONE, FlxG.keys.ONE, 6, onePressed );
+			checkButton( FlxG.keys.NUMPADTWO, FlxG.keys.TWO, 7, twoPressed );
+			checkButton( FlxG.keys.NUMPADTHREE, FlxG.keys.THREE, 8, threePressed );
 			super.update();
 		}
 		
-		public function checkButton( key:Boolean, index:int, bool:Boolean ):void
+		public function checkButton( key:Boolean, altKey:Boolean, index:int, bool:Boolean ):void
 		{
-			if( key )
+			if( key || altKey )
 			{
 				if( inventoryArray[index].hasItem && !sevenPressed )
 				{
-					inventoryArray[index].hasItem = false;
-					addSequencerItem();
+					inventoryArray[index].clearItem();
+					addSequencerItem( inventoryArray[index].skullType );
 				}
 				sevenPressed = true;
 			}

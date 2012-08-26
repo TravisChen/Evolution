@@ -8,6 +8,7 @@ package    {
 
 		public var levelSizeX:Number = 0;
 		public var levelSizeY:Number = 0;
+		public var points:Number = 0;
 
 		public function update():void
 		{

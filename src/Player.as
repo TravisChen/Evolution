@@ -15,15 +15,16 @@ package
 			
 			//bounding box tweaks
 			width = 16;
-			height = 32;
+			height = 16;
 			offset.x = 8;
+			offset.y = 16;
 			jumping = false;
 			
 			//basic player physics
 			var runSpeed:uint = 80;
 			drag.x = runSpeed*8;
 			acceleration.y = 420;
-			jumpPower = 200;
+			jumpPower = 180;
 			maxVelocity.x = runSpeed;
 			maxVelocity.y = jumpPower;
 				
