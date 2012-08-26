@@ -13,7 +13,7 @@
 		<baseWidth>80</baseWidth>
 		<baseHeight>16</baseHeight>
 		<baseTileset class_id="4" tracking_level="0" version="0">
-			<path>Tilemaps/map-tiles.png</path>
+			<path>map-tiles.png</path>
 		</baseTileset>
 		<bgColor.r>255</bgColor.r>
 		<bgColor.g>255</bgColor.g>
@@ -32,7 +32,7 @@
 				<hidden>0</hidden>
 				<tileset class_id="8" tracking_level="0" version="0">
 					<path>
-						<path>Tilemaps/map-tiles.png</path>
+						<path>map-tiles.png</path>
 					</path>
 				</tileset>
 				<matrix class_id="9" tracking_level="0" version="0">
@@ -40,7 +40,7 @@
 						<count>1280</count>
 						<item_version>1</item_version>
 						<item class_id="11" tracking_level="0" version="1">
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -58,7 +58,7 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -496,7 +496,7 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -514,13 +514,13 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -538,7 +538,7 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -976,7 +976,7 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -994,13 +994,13 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -1018,7 +1018,7 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -1456,7 +1456,7 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -1474,13 +1474,13 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -1498,7 +1498,7 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -1936,7 +1936,7 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -1954,13 +1954,13 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -1978,7 +1978,7 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -2416,7 +2416,7 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -2434,13 +2434,13 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -2458,7 +2458,7 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -2896,7 +2896,7 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -2914,13 +2914,13 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -2938,7 +2938,7 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -3376,7 +3376,7 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -3394,13 +3394,13 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -3418,7 +3418,7 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -3856,7 +3856,7 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -3874,13 +3874,13 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -3898,7 +3898,7 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -4336,7 +4336,7 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -4354,13 +4354,13 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -4378,7 +4378,7 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -4816,7 +4816,7 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -4834,13 +4834,13 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -4858,7 +4858,7 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -5296,7 +5296,7 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -5314,13 +5314,13 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -5338,7 +5338,7 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -5776,7 +5776,7 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -5794,13 +5794,13 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -5818,7 +5818,7 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -6256,7 +6256,7 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -6274,1447 +6274,1447 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -7739,10 +7739,10 @@
 	</layerList>
 	<importExport class_id="14" tracking_level="0" version="1">
 		<csvDirPath>
-			<path>Tilemaps</path>
+			<path>../Tilemaps</path>
 		</csvDirPath>
 		<as3DirPath>
-			<path>Tilemaps</path>
+			<path>../Tilemaps</path>
 		</as3DirPath>
 		<package></package>
 		<useBaseClass>1</useBaseClass>

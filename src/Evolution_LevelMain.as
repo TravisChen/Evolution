@@ -14,10 +14,12 @@ package    {
 		
 		[Embed(source='../data/Tilemaps/map-tiles.png')] private var ImgTiles:Class;
 		[Embed(source='../data/Tilemaps/MapCSV_Evolution_Boundary.txt',mimeType="application/octet-stream")] private var TxtMap:Class;
+		[Embed(source='../data/Tilemaps/MapCSV_Evolution_Platforms.txt',mimeType="application/octet-stream")] private var TxtMapPlatforms:Class;
 		
 		private var pointsText:FlxText;
 		
 		private var tilemap:FlxTilemap;
+		private var platformsTilemap:FlxTilemap;
 		private var timer:Number;
 		private var timerText:FlxText;
 
@@ -43,6 +45,12 @@ package    {
 			tilemap.visible = false;
 			PlayState.groupTilemap.add(tilemap);
 			tilemap.follow();
+			
+			platformsTilemap = new FlxTilemap();
+			platformsTilemap.loadMap(new TxtMapPlatforms,ImgTiles,8);
+			platformsTilemap.visible = false;
+			PlayState.groupTilemap.add(platformsTilemap);
+			platformsTilemap.follow();
 			
 			// Create player
 			player = new Player(FlxG.width/2,FlxG.height - 40);
@@ -134,8 +142,9 @@ package    {
 			// Collide
 			if( player.velocity.y >= 0 )
 			{
-				FlxG.collide(tilemap,player);
+				FlxG.collide(platformsTilemap,player);
 			}
+			FlxG.collide(tilemap,player);
 			FlxG.collide(tilemap,enemy);
 			FlxG.collide(player,enemy);
 			
