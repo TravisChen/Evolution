@@ -105,7 +105,7 @@ package    {
 			buildRoundEnd();
 
 			// Music
-			FlxG.playMusic(SndEvolutionSong,1.0);
+			FlxG.playMusic(SndEvolutionSong,0.2);
 			
 			super();
 		}

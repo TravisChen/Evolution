@@ -7,6 +7,10 @@ package
 		[Embed(source="data/darwin.png")] private var ImgDarwin:Class;
 		[Embed(source="data/questionmark.png")] private var ImgQuestionMark:Class;
 		[Embed(source="data/wasd.png")] private var ImgWasd:Class;
+
+		[Embed(source = '../data/Audio/dig.mp3')] private var SndDig:Class;
+		[Embed(source = '../data/Audio/jump.mp3')] private var SndJump:Class;
+		[Embed(source = '../data/Audio/preach.mp3')] private var SndStun:Class;
 		
 		public var startTime:Number;
 		
@@ -136,6 +140,7 @@ package
 			{
 				if( enemy.overlaps(this) )
 				{
+					FlxG.play(SndStun,0.2);
 					stunTime = STUN_TIME;
 				}
 			}
@@ -234,6 +239,8 @@ package
 			{
 				if( !velocity.y && !jumping )
 				{
+					FlxG.play(SndJump,1.0);
+					
 					play("jump");
 					velocity.y = -jumpPower;
 				}
@@ -248,6 +255,7 @@ package
 			{
 				if( !fakeDigging )
 				{
+					FlxG.play(SndDig,0.3);
 					fakeDigging = true;
 					digging = true;
 				}

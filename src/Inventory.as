@@ -11,6 +11,9 @@ package
 		[Embed(source="../data/sequenceron.png")] private var imgSequencerFlash:Class;
 		[Embed(source="../data/skull1.png")] private var imgSkull:Class;
 		
+		[Embed(source = '../data/Audio/sequencegood.mp3')] private var SndSequenceGood:Class;
+		[Embed(source = '../data/Audio/sequencebadalt.mp3')] private var SndSequenceBad:Class;
+		
 		[Embed(source="../data/1.png")] private var img1:Class;
 		[Embed(source="../data/2.png")] private var img2:Class;
 		[Embed(source="../data/3.png")] private var img3:Class;
@@ -132,11 +135,12 @@ package
 				PlayState._currLevel.multiplier += 1;
 				PlayState._currLevel.points += (1000 * PlayState._currLevel.multiplier);
 				sequencerFlashTimer = 1.0;
-				
+				FlxG.play(SndSequenceGood, 0.2);
 			}
 			else
 			{
 				PlayState._currLevel.multiplier = 1;
+				FlxG.play(SndSequenceBad, 0.7);
 			}
 			
 			for (var i:int = 0; i < sequencerArray.length; i++) {
