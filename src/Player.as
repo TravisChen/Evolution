@@ -4,7 +4,9 @@ package
 	
 	public class Player extends FlxSprite
 	{
-		[Embed(source="data/darwin.png")] private var ImgDarwn:Class;
+		[Embed(source="data/darwin.png")] private var ImgDarwin:Class;
+		[Embed(source="data/questionmark.png")] private var ImgQuestionMark:Class;
+		
 		private var jumpPower:int;
 		private var jumping:Boolean;
 		public var digging:Boolean;
@@ -15,11 +17,13 @@ package
 
 		public const STUN_TIME:Number = 2.0;
 		public const STUN_PROTECT_TIME:Number = 1.0;
+		public var questionMark:FlxSprite;
+		public var questionMarkBlinkTime:Number;
 		
 		public function Player(X:int,Y:int)
 		{
 			super(X,Y);
-			loadGraphic(ImgDarwn,true,true,32,32);
+			loadGraphic(ImgDarwin,true,true,32,32);
 			
 			//bounding box tweaks
 			width = 16;
@@ -31,6 +35,12 @@ package
 			
 			stunTime = 0;
 			stunProtectTime = 0;
+			questionMarkBlinkTime = 0;
+			
+			questionMark = new FlxSprite(0,0);
+			questionMark.loadGraphic(ImgQuestionMark, true, true, 16, 16);
+			questionMark.alpha = 0;
+			PlayState.groupForeground.add(questionMark);
 			
 			lastVelocityY = velocity.y;
 			
@@ -69,6 +79,22 @@ package
 			
 			if( stunTime > 0 )
 			{
+				questionMark.y = y - 34;
+				questionMark.x = x;
+				
+				if( questionMarkBlinkTime <= 0 )
+				{
+					questionMarkBlinkTime = 0.035;
+					if( questionMark.alpha == 0 )
+						questionMark.alpha = 1;
+					else
+						questionMark.alpha = 0;
+				}
+				else
+				{
+					questionMarkBlinkTime -= FlxG.elapsed;
+				}
+				
 				play("stun");
 				velocity.x = 0;
 				acceleration.x = 0;
@@ -76,6 +102,7 @@ package
 				
 				if( stunTime <= 0 )
 				{
+					questionMark.alpha = 0;
 					stunProtectTime = STUN_PROTECT_TIME;
 				}
 				return true;				
