@@ -7,6 +7,8 @@ package
 		[Embed(source="data/darwin.png")] private var ImgDarwin:Class;
 		[Embed(source="../data/particles.png")] private var ImgParticle:Class;
 		
+		[Embed(source = '../data/Audio/dig.mp3')] private var SndDig:Class;
+		
 		private var _particle:FlxEmitter;
 		private var _tilemap:FlxTilemap;
 		
@@ -35,6 +37,8 @@ package
 			_particle.setYSpeed(-50, -80);
 			
 			_particle.on = true;
+			
+			FlxG.play(SndDig,0.15);
 		}
 		
 		

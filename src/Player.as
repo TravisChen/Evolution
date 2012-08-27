@@ -255,7 +255,7 @@ package
 			{
 				if( !fakeDigging )
 				{
-					FlxG.play(SndDig,0.3);
+					FlxG.play(SndDig,0.25);
 					fakeDigging = true;
 					digging = true;
 				}
