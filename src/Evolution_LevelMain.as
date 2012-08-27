@@ -80,13 +80,15 @@ package    {
 			var skullSpawner:SkullSpawner = new SkullSpawner( player, tilemap, inventory);
 			PlayState.groupCollects.add(skullSpawner);
 			
+			createForegroundAndBackground();
+			
 			// Timer
 			startTime = 1.0;
 			timer = MAX_TIME;
 			timerText = new FlxText(0, 0, FlxG.width, "0:00");
 			timerText.setFormat(null,16,TEXT_COLOR,"left");
 			timerText.scrollFactor.x = timerText.scrollFactor.y = 0;
-			PlayState.groupForeground.add(timerText);
+			PlayState.groupBackground.add(timerText);
 			
 			var numPadText:FlxText = new FlxText(FlxG.width - 67, 41, FlxG.width/4, "NUM PAD");
 			numPadText.setFormat(null,8,0xFF353122,"center");
@@ -97,12 +99,11 @@ package    {
 			pointsText = new FlxText(0, 0, FlxG.width, "0");
 			pointsText.setFormat(null,16,TEXT_COLOR,"center");
 			pointsText.scrollFactor.x = pointsText.scrollFactor.y = 0;
-			PlayState.groupForeground.add(pointsText);
+			PlayState.groupBackground.add(pointsText);
 			
 			roundEnd = false;
 			buildRoundEnd();
-			
-			createForegroundAndBackground();
+
 			
 			//FlxG.playMusic(SndEvolutionSong,1.0);
 			
