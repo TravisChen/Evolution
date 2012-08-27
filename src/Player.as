@@ -9,8 +9,13 @@ package
 		private var jumping:Boolean;
 		public var digging:Boolean;
 		public var landing:Boolean;
+		public var stunTime:Number;
+		public var stunProtectTime:Number;
 		public var lastVelocityY:Number;
 
+		public const STUN_TIME:Number = 2.0;
+		public const STUN_PROTECT_TIME:Number = 1.0;
+		
 		public function Player(X:int,Y:int)
 		{
 			super(X,Y);
@@ -23,6 +28,9 @@ package
 			offset.y = 16;
 			jumping = false;
 			digging = false;
+			
+			stunTime = 0;
+			stunProtectTime = 0;
 			
 			lastVelocityY = velocity.y;
 			
@@ -39,10 +47,53 @@ package
 			addAnimation("dig", [5,6,7], 32);
 			addAnimation("jump", [8,9,10], 18, false);
 			addAnimation("land", [8], 20);
+			addAnimation("stun", [11,12], 15);
+		}
+		
+		public function updateStun():Boolean
+		{
+			if( stunProtectTime > 0 )
+			{
+				stunProtectTime -= FlxG.elapsed;
+				return false;
+			}
+			
+			var enemy:Enemy = PlayState._currLevel.enemy;
+			if( enemy && stunTime <= 0 )
+			{
+				if( enemy.overlaps(this) )
+				{
+					stunTime = STUN_TIME;
+				}
+			}
+			
+			if( stunTime > 0 )
+			{
+				play("stun");
+				velocity.x = 0;
+				acceleration.x = 0;
+				stunTime -= FlxG.elapsed;
+				
+				if( stunTime <= 0 )
+				{
+					stunProtectTime = STUN_PROTECT_TIME;
+				}
+				return true;				
+			}
+			
+			return false;			
 		}
 
 		override public function update():void
 		{
+			//UPDATE POSITION AND ANIMATION
+			super.update();
+			
+			if( updateStun() )
+			{
+				return;					
+			}
+				
 			if( landing ) 
 			{
 				play("land");
@@ -61,7 +112,7 @@ package
 					digging = false;					
 				}
 				return;
-			}
+			}	
 			
 			//MOVEMENT
 			acceleration.x = 0;
@@ -111,9 +162,6 @@ package
 			{
 				lastVelocityY = velocity.y;
 			}
-			
-			//UPDATE POSITION AND ANIMATION
-			super.update();
 		}
 	}
 }

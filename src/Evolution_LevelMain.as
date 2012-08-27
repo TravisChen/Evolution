@@ -97,7 +97,7 @@ package    {
 			
 			createForegroundAndBackground();
 			
-			FlxG.playMusic(SndEvolutionSong,1.0);
+			//FlxG.playMusic(SndEvolutionSong,1.0);
 			
 			super();
 		}
@@ -161,7 +161,6 @@ package    {
 			hudTilemap.x = FlxG.camera.scroll.x;
 			FlxG.collide(tilemap,player);
 			FlxG.collide(tilemap,enemy);
-			FlxG.collide(player,enemy);
 			
 			// Timer
 			var minutes:uint = timer/60;

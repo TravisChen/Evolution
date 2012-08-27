@@ -147,7 +147,7 @@ package
 			}
 
 			// Dig
-			if( _player.overlaps( this ) )
+			if( _player.overlaps( this ) && _player.stunTime <= 0 )
 			{
 				if( FlxG.keys.DOWN ||  FlxG.keys.S )
 				{
