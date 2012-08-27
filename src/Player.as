@@ -18,6 +18,7 @@ package
 		public var stunTime:Number;
 		public var stunProtectTime:Number;
 		public var lastVelocityY:Number;
+		public var roundOver:Boolean;
 
 		public const STUN_TIME:Number = 2.0;
 		public const STUN_PROTECT_TIME:Number = 1.0;
@@ -42,8 +43,9 @@ package
 			offset.y = 16;
 			jumping = false;
 			digging = false;
+			roundOver = false;
 			
-			startTime = 1.0;
+			startTime = 0.5;
 			
 			stunTime = 0;
 			stunProtectTime = 0;
@@ -208,6 +210,12 @@ package
 				}
 				return;
 			}	
+			
+			if( roundOver )
+			{
+				play("idle");
+				return;
+			}
 			
 			//MOVEMENT
 			acceleration.x = 0;

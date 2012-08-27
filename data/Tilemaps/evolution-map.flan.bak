@@ -29,7 +29,7 @@
 				<name>Intro</name>
 				<firstVisible>1</firstVisible>
 				<firstCollidable>1</firstCollidable>
-				<hidden>0</hidden>
+				<hidden>1</hidden>
 				<tileset class_id="8" tracking_level="0" version="0">
 					<path>
 						<path>map-tiles.png</path>
@@ -3899,7 +3899,7 @@
 				<name>HUD</name>
 				<firstVisible>1</firstVisible>
 				<firstCollidable>1</firstCollidable>
-				<hidden>0</hidden>
+				<hidden>1</hidden>
 				<tileset>
 					<path>
 						<path>map-tiles.png</path>
@@ -5788,25 +5788,7 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
 							<tile>1</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>1</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -5824,709 +5806,7 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
 							<tile>1</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>1</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>1</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>1</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>1</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>1</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>1</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>1</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>1</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>1</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -6748,25 +6028,7 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
 							<tile>1</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>1</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -6784,469 +6046,7 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
 							<tile>1</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>1</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>1</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>1</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
-							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -7468,7 +6268,745 @@
 							<uid>0</uid>
 						</item>
 						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
 							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -7504,247 +7042,709 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>0</tile>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>1</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -12250,12 +12250,6 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
-							<empty>0</empty>
-							<pattern>-1</pattern>
-							<uid>0</uid>
-						</item>
-						<item>
 							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
@@ -12442,13 +12436,19 @@
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
 						</item>
 						<item>
-							<tile>1</tile>
+							<tile>0</tile>
+							<empty>0</empty>
+							<pattern>-1</pattern>
+							<uid>0</uid>
+						</item>
+						<item>
+							<tile>0</tile>
 							<empty>0</empty>
 							<pattern>-1</pattern>
 							<uid>0</uid>
@@ -15479,7 +15479,7 @@
 				<name>Boundary</name>
 				<firstVisible>1</firstVisible>
 				<firstCollidable>1</firstCollidable>
-				<hidden>0</hidden>
+				<hidden>1</hidden>
 				<tileset>
 					<path>
 						<path>map-tiles.png</path>

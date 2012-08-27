@@ -29,7 +29,7 @@ package
 		public var numDigs:uint;
 		public var downTimer:Number;
 		
-		public const DOWN_TIME:Number = 0.5;
+		public const DOWN_TIME:Number = 1.0;
 		public const DIGS_TO_COLLECT:uint = 4;
 		public const DIG_Y:uint = 4;
 		public const COLLECTED_TIME:Number = 0.75;

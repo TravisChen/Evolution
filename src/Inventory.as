@@ -91,7 +91,7 @@ package
 			}
 			
 			
-			PlayState._currLevel.points += 100;
+			PlayState._currLevel.points += (50 * PlayState._currLevel.multiplier);
 		}
 		
 		public function addSequencerItem( type:uint ):void
@@ -129,13 +129,14 @@ package
 			
 			if( goodSequence )
 			{
-//				FlxG.flash(0xff00ff00, 0.75);
-				PlayState._currLevel.points += 1000;
+				PlayState._currLevel.multiplier += 1;
+				PlayState._currLevel.points += (1000 * PlayState._currLevel.multiplier);
 				sequencerFlashTimer = 1.0;
+				
 			}
 			else
 			{
-//				FlxG.flash(0xffff0000, 0.75);
+				PlayState._currLevel.multiplier = 1;
 			}
 			
 			for (var i:int = 0; i < sequencerArray.length; i++) {

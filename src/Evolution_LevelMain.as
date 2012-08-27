@@ -22,6 +22,7 @@ package    {
 		
 		private var pointsText:FlxText;
 		public var startTime:Number;
+		public var endTime:Number;
 		
 		private var tilemap:FlxTilemap;
 		private var platformsTilemap:FlxTilemap;
@@ -37,7 +38,7 @@ package    {
 		
 		private var inventory:Inventory;
 		
-		public const MAX_TIME:uint = 5;
+		public const MAX_TIME:uint = 120;
 		public const TEXT_COLOR:uint = 0xFFF8CA00;
 		
 		public var sound:FlxSound;
@@ -92,9 +93,11 @@ package    {
 			timerText.scrollFactor.x = timerText.scrollFactor.y = 0;
 			PlayState.groupBackground.add(timerText);
 			
+			endTime = 3.0;
+			
 			points = 0;
 			pointsText = new FlxText(0, 0, FlxG.width, "0");
-			pointsText.setFormat(null,16,TEXT_COLOR,"center");
+			pointsText.setFormat(null,8,TEXT_COLOR,"center");
 			pointsText.scrollFactor.x = pointsText.scrollFactor.y = 0;
 			PlayState.groupBackground.add(pointsText);
 			
@@ -121,8 +124,8 @@ package    {
 			roundEndContinueText.visible = false;
 			PlayState.groupForegroundHighest.add(roundEndContinueText);
 			
-			roundEndPointsText = new FlxText(0, 116, FlxG.width, "PRESS ANY KEY TO CONTINUE");
-			roundEndPointsText.setFormat(null,8,TEXT_COLOR,"center");
+			roundEndPointsText = new FlxText(FlxG.width/2, 85, FlxG.width, "0");
+			roundEndPointsText.setFormat(null,16,TEXT_COLOR,"left");
 			roundEndPointsText.scrollFactor.x = roundEndContinueText.scrollFactor.y = 0;	
 			roundEndPointsText.visible = false;
 			PlayState.groupForegroundHighest.add(roundEndPointsText);
@@ -190,8 +193,17 @@ package    {
 			if( timer <= 0 )
 			{
 				showEndPrompt();
+				if( endTime <= 0 )
+				{
+					checkAnyKey();					
+				}
+				else
+				{
+					endTime -= FlxG.elapsed;
+				}
 				return;
 			}
+			
 			// Update timer text
 			if( seconds < 10 )
 				timerText.text = "" + minutes + ":0" + seconds;
@@ -199,15 +211,22 @@ package    {
 				timerText.text = "" + minutes + ":" + seconds;
 			
 			// Update points text
-			pointsText.text = "" + points;
+			pointsText.text = "" + points + " (" + PlayState._currLevel.multiplier + "x)";
+			roundEndPointsText.text = "" + points;
 			
 			super.update();
 		}
 		
 		private function showEndPrompt():void 
 		{
-			roundEndContinueText.visible = true;
+			PlayState._currLevel.player.roundOver = true;
 			roundEndForeground.visible = true;
+			roundEndPointsText.visible = true;
+		}
+		
+		private function checkAnyKey():void 
+		{
+			roundEndContinueText.visible = true;
 			if (FlxG.keys.any())
 			{
 				FlxG.flash(0xffffffff, 0.75);
