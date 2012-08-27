@@ -10,12 +10,23 @@ package
 		[Embed(source="../data/sequencer.png")] private var imgSequencer:Class;
 		[Embed(source="../data/skull1.png")] private var imgSkull:Class;
 		
+		[Embed(source="../data/1.png")] private var img1:Class;
+		[Embed(source="../data/2.png")] private var img2:Class;
+		[Embed(source="../data/3.png")] private var img3:Class;
+		[Embed(source="../data/4.png")] private var img4:Class;
+		[Embed(source="../data/5.png")] private var img5:Class;
+		[Embed(source="../data/6.png")] private var img6:Class;
+		[Embed(source="../data/7.png")] private var img7:Class;
+		[Embed(source="../data/8.png")] private var img8:Class;
+		[Embed(source="../data/9.png")] private var img9:Class;
+		
 		public const TEXT_COLOR:uint = 0xFF555555;
 		
 		private var _hudTilemap:FlxTilemap;
 		
 		public var inventoryArray:Array; 
 		public var sequencerArray:Array;
+		public var numberArray:Array;
 		
 		public var sevenPressed:Boolean;
 		public var eightPressed:Boolean;
@@ -38,6 +49,7 @@ package
 		
 			inventoryArray = new Array();
 			sequencerArray = new Array();
+			numberArray = new Array();
 			
 			sevenPressed = false;
 			inventoryDisabledTime = 0.0;
@@ -54,6 +66,7 @@ package
 				{
 					inventoryFull = false;
 					inventoryArray[i].setItem( type );
+					numberArray[i].visible = false;
 					break;
 				}
 			}
@@ -127,18 +140,18 @@ package
 		{
 			var sequencer:FlxSprite;
 			sequencer = new FlxSprite(0,0);
-			sequencer.loadGraphic(imgSequencer, true, true, 74, 24);
+			sequencer.loadGraphic(imgSequencer, true, true, 100, 48);
 			sequencer.scrollFactor.x = sequencer.scrollFactor.y = 0;
-			sequencer.y = this.y - 26;
-			sequencer.x = this.x;
+			sequencer.y = this.y - 52;
+			sequencer.x = this.x - 22;
 			PlayState.groupForegroundHigh.add(sequencer);	
 			
 			for (var i:int = 0; i < 3; i++) {
 				var skull:SkullInventoryItem;
 				skull = new SkullInventoryItem(0,0,true,_hudTilemap);
 				skull.scrollFactor.x = skull.scrollFactor.y = 0;
-				skull.y = sequencer.y + 4;
-				skull.x = sequencer.x + i*22 + 4 + 3*i;
+				skull.y = sequencer.y + 16;
+				skull.x = sequencer.x + i*22 + 17 + 3*i;
 				PlayState.groupForegroundHigh.add(skull);
 					
 				sequencerArray.push(skull);
@@ -151,12 +164,15 @@ package
 			for (var i:int = 0; i < 3; i++) {
 				for (var j:int = 0; j < 3; j++) {
 					
-					var timerText:FlxText = new FlxText(0, 0, 12, "" + ( 7 + j - ( 3 * i ) ));
-					timerText.setFormat(null,8,TEXT_COLOR,"center");
-					timerText.scrollFactor.x = timerText.scrollFactor.y = 0;
-					timerText.y = this.y + i*22 + 5 + 3*i;
-					timerText.x = this.x + j*22 + 4 + 3*j;
-					PlayState.groupForegroundHigh.add(timerText);
+					var number:FlxSprite;
+					number = new FlxSprite(0,0);
+					number.loadGraphic( getNumberImage( 6 + j - ( 3 * i ) ), true, true, 11, 11);
+					number.scrollFactor.x = number.scrollFactor.y = 0;
+					number.y = this.y + i*22 + 7 + 3*i;
+					number.x = this.x + j*22 + 7 + 3*j;
+					number.alpha = 0.75;
+					numberArray.push( number );
+					PlayState.groupForegroundHigh.add(number);
 					
 					var skull:SkullInventoryItem;
 					skull = new SkullInventoryItem(0,0,false,_hudTilemap);
@@ -170,6 +186,42 @@ package
 				}
 			}
 
+		}
+		
+		public function getNumberImage( index:uint ):Class 
+		{
+			var numberImage:Class = img1;
+			
+			switch (index){
+				case 0:
+					numberImage = img1;
+					break;				
+				case 1:
+					numberImage = img2;
+					break;
+				case 2:
+					numberImage = img3;
+					break;
+				case 3:
+					numberImage = img4;
+					break;
+				case 4:
+					numberImage = img5;
+					break;
+				case 5:
+					numberImage = img6;
+					break;
+				case 6:
+					numberImage = img7;
+					break;
+				case 7:
+					numberImage = img8;
+					break;
+				case 8:
+					numberImage = img9;
+					break;
+			}
+			return numberImage;
 		}
 		
 		override public function update():void
@@ -198,6 +250,7 @@ package
 			{
 				if( inventoryArray[index].hasItem && !sevenPressed )
 				{
+					numberArray[index].visible = true;
 					inventoryArray[index].clearItem();
 					addSequencerItem( inventoryArray[index].skullType );
 				}

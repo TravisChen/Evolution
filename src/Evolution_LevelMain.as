@@ -20,6 +20,7 @@ package    {
 		[Embed(source='../data/Tilemaps/MapCSV_Evolution_HUD.txt',mimeType="application/octet-stream")] private var TxtHudMap:Class;
 		
 		private var pointsText:FlxText;
+		public var startTime:Number;
 		
 		private var tilemap:FlxTilemap;
 		private var platformsTilemap:FlxTilemap;
@@ -63,11 +64,11 @@ package    {
 			PlayState.groupTilemap.add(hudTilemap);
 
 			// Create player
-			player = new Player(FlxG.width/2,FlxG.height - 40);
+			player = new Player(300,FlxG.height - 40);
 			PlayState.groupPlayer.add(player);
 
 			// Create player
-			enemy = new Enemy(FlxG.width/4,FlxG.height - 40);
+			enemy = new Enemy(150,FlxG.height - 40);
 			PlayState.groupPlayer.add(enemy);
 
 			// Inventory
@@ -80,15 +81,21 @@ package    {
 			PlayState.groupCollects.add(skullSpawner);
 			
 			// Timer
+			startTime = 1.0;
 			timer = MAX_TIME;
 			timerText = new FlxText(0, 0, FlxG.width, "0:00");
-			timerText.setFormat(null,16,TEXT_COLOR,"center");
+			timerText.setFormat(null,16,TEXT_COLOR,"left");
 			timerText.scrollFactor.x = timerText.scrollFactor.y = 0;
 			PlayState.groupForeground.add(timerText);
 			
+			var numPadText:FlxText = new FlxText(FlxG.width - 67, 41, FlxG.width/4, "NUM PAD");
+			numPadText.setFormat(null,8,0xFF353122,"center");
+			numPadText.scrollFactor.x = numPadText.scrollFactor.y = 0;
+			PlayState.groupForeground.add(numPadText);
+			
 			points = 0;
 			pointsText = new FlxText(0, 0, FlxG.width, "0");
-			pointsText.setFormat(null,16,TEXT_COLOR,"right");
+			pointsText.setFormat(null,16,TEXT_COLOR,"center");
 			pointsText.scrollFactor.x = pointsText.scrollFactor.y = 0;
 			PlayState.groupForeground.add(pointsText);
 			
@@ -165,15 +172,21 @@ package    {
 			// Timer
 			var minutes:uint = timer/60;
 			var seconds:uint = timer - minutes*60;
-			timer -= FlxG.elapsed;
-
+			if( startTime <= 0 )
+			{
+				timer -= FlxG.elapsed;
+			}
+			else
+			{
+				startTime -= FlxG.elapsed;
+			}
+			
 			// Check round end
 			if( timer <= 0 )
 			{
 				showEndPrompt();
 				return;
 			}
-			
 			// Update timer text
 			if( seconds < 10 )
 				timerText.text = "" + minutes + ":0" + seconds;

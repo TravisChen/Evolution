@@ -10,6 +10,8 @@ package
 		public var digging:Boolean;
 		public var left:Boolean;
 		public var right:Boolean;
+		
+		public var startTime:Number;
 
 		public const WALK_SPEED:Number = 40;
 		public const RUN_SPEED:Number = 72;
@@ -25,7 +27,7 @@ package
 			loadGraphic(ImgPriest,true,true,32,32);
 			
 			// bounding box tweaks
-			width = 44;
+			width = 32;
 			height = 16;
 			offset.x = 0;
 			offset.y = 16;
@@ -34,6 +36,8 @@ package
 			
 			stunTime = 0.0;
 			walkAwayTime = 0.0;
+			
+			startTime = 1.0;
 			
 			// enemy physics
 			var speed:uint = WALK_SPEED;
@@ -78,6 +82,12 @@ package
 		{	
 			//UPDATE POSITION AND ANIMATION
 			super.update();
+			
+			if( startTime > 0 )
+			{
+				startTime -= FlxG.elapsed;
+				return;
+			}
 			
 			if( updateStun() )
 			{

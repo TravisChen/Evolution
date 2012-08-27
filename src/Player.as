@@ -6,10 +6,14 @@ package
 	{
 		[Embed(source="data/darwin.png")] private var ImgDarwin:Class;
 		[Embed(source="data/questionmark.png")] private var ImgQuestionMark:Class;
+		[Embed(source="data/wasd.png")] private var ImgWasd:Class;
+		
+		public var startTime:Number;
 		
 		private var jumpPower:int;
 		private var jumping:Boolean;
 		public var digging:Boolean;
+		public var fakeDigging:Boolean;
 		public var landing:Boolean;
 		public var stunTime:Number;
 		public var stunProtectTime:Number;
@@ -17,8 +21,14 @@ package
 
 		public const STUN_TIME:Number = 2.0;
 		public const STUN_PROTECT_TIME:Number = 1.0;
+		
 		public var questionMark:FlxSprite;
 		public var questionMarkBlinkTime:Number;
+		
+		public var wasd:FlxSprite;
+		public var wasdFadeOutTime:Number;
+		public var wasdBounceTime:Number;
+		public var wasdBounceToggle:Boolean;
 		
 		public function Player(X:int,Y:int)
 		{
@@ -33,18 +43,28 @@ package
 			jumping = false;
 			digging = false;
 			
+			startTime = 1.0;
+			
 			stunTime = 0;
 			stunProtectTime = 0;
 			questionMarkBlinkTime = 0;
+			wasdFadeOutTime = 0;
+			wasdBounceToggle = true;
+			wasdBounceTime = 0;
 			
 			questionMark = new FlxSprite(0,0);
 			questionMark.loadGraphic(ImgQuestionMark, true, true, 16, 16);
 			questionMark.alpha = 0;
 			PlayState.groupForeground.add(questionMark);
 			
+			wasd = new FlxSprite(0,0);
+			wasd.loadGraphic(ImgWasd, true, true, 32, 32);
+			wasd.alpha = 1;
+			PlayState.groupForeground.add(wasd);
+			
 			lastVelocityY = velocity.y;
 			
-			//basic player physics
+			// Basic player physics
 			var runSpeed:uint = 140;
 			drag.x = runSpeed*8;
 			acceleration.y = 420;
@@ -58,6 +78,47 @@ package
 			addAnimation("jump", [8,9,10], 18, false);
 			addAnimation("land", [8], 20);
 			addAnimation("stun", [11,12], 15);
+		}
+		
+		public function updateNumPad():void 
+		{
+			wasd.y = y - 40;
+			wasd.x = x - 8;
+			
+			if( stunTime > 0 )
+			{
+				wasd.visible = false;
+			}
+			else
+			{
+				wasd.visible = true;
+			}
+			
+			if( velocity.x != 0 || velocity.y != 0 )
+			{
+				wasd.alpha -= 0.025;		
+			}
+			else
+			{
+				if( wasdBounceTime <= 0 )
+				{
+					wasdBounceTime = 0.02;
+					if( wasdBounceToggle )
+					{
+						wasd.y += 1;
+						wasdBounceToggle = false;
+					}
+					else
+					{
+						wasd.y -= 1;
+						wasdBounceToggle = true;
+					}
+				}
+				else
+				{
+					wasdBounceTime -= FlxG.elapsed;
+				}
+			}
 		}
 		
 		public function updateStun():Boolean
@@ -112,15 +173,22 @@ package
 		}
 
 		override public function update():void
-		{
+		{			
 			//UPDATE POSITION AND ANIMATION
 			super.update();
+			updateNumPad();
 			
+			if( startTime > 0 )
+			{
+				startTime -= FlxG.elapsed;
+				return;
+			}
+				
 			if( updateStun() )
 			{
 				return;					
 			}
-				
+
 			if( landing ) 
 			{
 				play("land");
@@ -166,6 +234,19 @@ package
 			else
 			{
 				jumping = false;
+			}
+			
+			if( FlxG.keys.DOWN || FlxG.keys.S )
+			{
+				if( !fakeDigging )
+				{
+					fakeDigging = true;
+					digging = true;
+				}
+			}
+			else
+			{
+				fakeDigging = false;				
 			}
 
 			if( !velocity.y )
