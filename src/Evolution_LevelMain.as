@@ -13,6 +13,7 @@ package    {
 		[Embed(source = '../data/stage.png')] private var ImgBackground:Class;
 		[Embed(source = '../data/grass.png')] private var ImgForeground:Class;
 		[Embed(source='../data/inventory.png')] private var ImgInventory:Class;
+		[Embed(source='../data/roundend.png')] private var ImgRoundEnd:Class;
 		
 		[Embed(source='../data/Tilemaps/map-tiles.png')] private var ImgTiles:Class;
 		[Embed(source='../data/Tilemaps/MapCSV_Evolution_Boundary.txt',mimeType="application/octet-stream")] private var TxtMap:Class;
@@ -30,12 +31,13 @@ package    {
 		private var timerText:FlxText;
 
 		private var roundEnd:Boolean;
-		private var roundEndText:FlxText;
+		private var roundEndForeground:FlxSprite;
 		private var roundEndContinueText:FlxText;
+		private var roundEndPointsText:FlxText;
 		
 		private var inventory:Inventory;
 		
-		public const MAX_TIME:uint = 120;
+		public const MAX_TIME:uint = 5;
 		public const TEXT_COLOR:uint = 0xFFF8CA00;
 		
 		public var sound:FlxSound;
@@ -72,7 +74,7 @@ package    {
 			PlayState.groupPlayer.add(enemy);
 
 			// Inventory
-			inventory = new Inventory(FlxG.width - 76,FlxG.height - 76, hudTilemap);
+			inventory = new Inventory(FlxG.width - 76,FlxG.height - 81, hudTilemap);
 			inventory.scrollFactor.x = inventory.scrollFactor.y = 0;
 			PlayState.groupForeground.add(inventory);
 			
@@ -90,11 +92,6 @@ package    {
 			timerText.scrollFactor.x = timerText.scrollFactor.y = 0;
 			PlayState.groupBackground.add(timerText);
 			
-			var numPadText:FlxText = new FlxText(FlxG.width - 67, 41, FlxG.width/4, "NUM PAD");
-			numPadText.setFormat(null,8,0xFF353122,"center");
-			numPadText.scrollFactor.x = numPadText.scrollFactor.y = 0;
-			PlayState.groupForeground.add(numPadText);
-			
 			points = 0;
 			pointsText = new FlxText(0, 0, FlxG.width, "0");
 			pointsText.setFormat(null,16,TEXT_COLOR,"center");
@@ -104,24 +101,31 @@ package    {
 			roundEnd = false;
 			buildRoundEnd();
 
-			
-			//FlxG.playMusic(SndEvolutionSong,1.0);
+			// Music
+			FlxG.playMusic(SndEvolutionSong,1.0);
 			
 			super();
 		}
 		
 		public function buildRoundEnd():void {
-			roundEndText = new FlxText(0, 40, FlxG.width, "ROUND END");
-			roundEndText.setFormat(null,16,TEXT_COLOR,"center");
-			roundEndText.scrollFactor.x = roundEndText.scrollFactor.y = 0;	
-			PlayState.groupForeground.add(roundEndText);
-			roundEndText.alpha = 0;
 			
-			roundEndContinueText = new FlxText(0, 64, FlxG.width, "PRESS ANY KEY TO CONTINUE");
+			roundEndForeground = new FlxSprite(0,0);
+			roundEndForeground.loadGraphic(ImgRoundEnd, true, true, 320, 128);
+			roundEndForeground.scrollFactor.x = roundEndForeground.scrollFactor.y = 0;
+			roundEndForeground.visible = false;
+			PlayState.groupForegroundHighest.add(roundEndForeground);
+			
+			roundEndContinueText = new FlxText(0, 116, FlxG.width, "PRESS ANY KEY TO CONTINUE");
 			roundEndContinueText.setFormat(null,8,TEXT_COLOR,"center");
 			roundEndContinueText.scrollFactor.x = roundEndContinueText.scrollFactor.y = 0;	
-			PlayState.groupForeground.add(roundEndContinueText);
-			roundEndContinueText.alpha = 0;
+			roundEndContinueText.visible = false;
+			PlayState.groupForegroundHighest.add(roundEndContinueText);
+			
+			roundEndPointsText = new FlxText(0, 116, FlxG.width, "PRESS ANY KEY TO CONTINUE");
+			roundEndPointsText.setFormat(null,8,TEXT_COLOR,"center");
+			roundEndPointsText.scrollFactor.x = roundEndContinueText.scrollFactor.y = 0;	
+			roundEndPointsText.visible = false;
+			PlayState.groupForegroundHighest.add(roundEndPointsText);
 		}
 		
 		public function createForegroundAndBackground():void {
@@ -202,8 +206,8 @@ package    {
 		
 		private function showEndPrompt():void 
 		{
-			roundEndText.alpha = 1;
-			roundEndContinueText.alpha = 1;
+			roundEndContinueText.visible = true;
+			roundEndForeground.visible = true;
 			if (FlxG.keys.any())
 			{
 				FlxG.flash(0xffffffff, 0.75);

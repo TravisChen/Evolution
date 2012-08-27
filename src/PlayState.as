@@ -14,6 +14,7 @@ package
 		public static var groupPlayer:FlxGroup;
 		public static var groupForeground:FlxGroup;
 		public static var groupForegroundHigh:FlxGroup;
+		public static var groupForegroundHighest:FlxGroup;
 		
 		public var cursor:AnimatedCursor;
 		
@@ -29,6 +30,7 @@ package
 			groupLevelForeground = new FlxGroup;
 			groupForeground = new FlxGroup;
 			groupForegroundHigh = new FlxGroup;
+			groupForegroundHighest = new FlxGroup;
 			
 			// Create the level
 			var currLevelClass:Class = levelArray[Evolution.currLevelIndex];
@@ -42,6 +44,7 @@ package
 			this.add(groupLevelForeground);
 			this.add(groupForeground);
 			this.add(groupForegroundHigh);
+			this.add(groupForegroundHighest);
 		}
 		
 		override public function update():void

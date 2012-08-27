@@ -11,19 +11,22 @@ package
 		[Embed(source='../data/skull5.png')] private var ImgSkull5:Class;
 		[Embed(source='../data/skull6.png')] private var ImgSkull6:Class;
 		[Embed(source="../data/skull1.png")] private var imgSkull:Class;
-		[Embed(source="../data/particles.png")] private var ImgParticle:Class;
-	
+		[Embed(source="../data/particlesgood.png")] private var ImgParticle:Class;
+		[Embed(source="../data/particlesbad.png")] private var ImgParticleBad:Class;
+		
 		private var _hudTilemap:FlxTilemap;
 		
 		public var hasItem:Boolean;
 		public var skullType:uint;
 		public var particle:FlxEmitter;
-	
+		public var particleBad:FlxEmitter;
+		
 		public var collected:Boolean;
 		public var collectedTime:Number;
 		public var collectedHoldTime:Number;
 		
 		public const COLLECTED_TIME:Number = 0.5;
+		public var _success:Boolean;
 		
 		public function SkullInventoryItem(X:int,Y:int,sequencer:Boolean,hudTilemap:FlxTilemap)
 		{
@@ -35,6 +38,7 @@ package
 			skullType = 0;
 			
 			collected = false;
+			_success = false;
 			collectedTime = COLLECTED_TIME;
 			collectedHoldTime = 0.25;
 			
@@ -42,8 +46,13 @@ package
 			{
 				// Add gibs
 				particle = new FlxEmitter(0,0,-1);
-				particle.makeParticles(ImgParticle,80,16,true,1.0);
+				particle.makeParticles(ImgParticle,40,16,true,1.0);
 				PlayState.groupForegroundHigh.add(particle);
+
+				// Add gibs
+				particleBad = new FlxEmitter(0,0,-1);
+				particleBad.makeParticles(ImgParticleBad,6,16,true,1.0);
+				PlayState.groupForegroundHigh.add(particleBad);
 			}				
 			
 			loadGraphic(imgSkull, true, true, 16, 16);
@@ -91,40 +100,56 @@ package
 		{
 			this.visible = true;
 			collected = true;	
+			_success = success;
 
-			particle.x = x + FlxG.camera.scroll.x;
-			particle.y = y;
-			
 			if( success )
 			{
-				particle.gravity = 350;
+				particle.x = x + FlxG.camera.scroll.x;
+				particle.y = y;
+				
+				particle.gravity = 250;
 				particle.setXSpeed(-30, 30);
-				particle.setYSpeed(-50, -200 );				
+				particle.setYSpeed(-50, -150 );		
+				
+				particle.on = true;
 			}
 			else
 			{
-				particle.gravity = 350;
-				particle.setXSpeed(-30, 30);
-				particle.setYSpeed(-50, -80);
-			}
+				particleBad.x = x + 8 + FlxG.camera.scroll.x;
+				particleBad.y = y + 10;
+				
+				particleBad.gravity = 250;
+				particleBad.setXSpeed(-30, 30);
+				particleBad.setYSpeed(-30, -60);
 			
-			particle.on = true;
+				particleBad.on = true;
+			}
+
 		}
 		
 		override public function update():void
 		{
-			if( particle )
+			if( particleBad )
 			{
+				particleBad.update();
 				particle.update();
+				FlxG.collide(particleBad,_hudTilemap);
 				FlxG.collide(particle,_hudTilemap);
 			}
 			
 			if( collected )
 			{
-				collectedHoldTime -= FlxG.elapsed;
-				if( collectedHoldTime <= 0 )
+				if( _success )
 				{
-					alpha -= 0.05;
+					collectedHoldTime -= FlxG.elapsed;
+					if( collectedHoldTime <= 0 )
+					{
+						alpha -= 0.05;
+					}
+				}
+				else
+				{
+					alpha = 0;
 				}
 
 				collectedTime -= FlxG.elapsed;

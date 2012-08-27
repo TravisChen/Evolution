@@ -8,6 +8,7 @@ package
 	{
 		[Embed(source="../data/inventory.png")] private var imgInventory:Class;
 		[Embed(source="../data/sequencer.png")] private var imgSequencer:Class;
+		[Embed(source="../data/sequenceron.png")] private var imgSequencerFlash:Class;
 		[Embed(source="../data/skull1.png")] private var imgSkull:Class;
 		
 		[Embed(source="../data/1.png")] private var img1:Class;
@@ -38,6 +39,10 @@ package
 		public var twoPressed:Boolean;
 		public var threePressed:Boolean;
 		
+		public var sequencerFlash:FlxSprite;
+		public var sequencerFlashTimer:Number;
+		public var sequencerFlashToggle:Number;
+		
 		public var inventoryDisabledTime:Number;
 		
 		public function Inventory(X:int,Y:int,hudTilemap:FlxTilemap)
@@ -45,11 +50,14 @@ package
 			_hudTilemap = hudTilemap;
 			
 			super(X,Y);
-			loadGraphic(imgInventory, true, true, 74, 74);
+			loadGraphic(imgInventory, true, true, 74, 79);
 		
 			inventoryArray = new Array();
 			sequencerArray = new Array();
 			numberArray = new Array();
+			
+			sequencerFlashTimer = 0.0;
+			sequencerFlashToggle = 0.0;
 			
 			sevenPressed = false;
 			inventoryDisabledTime = 0.0;
@@ -121,12 +129,13 @@ package
 			
 			if( goodSequence )
 			{
-				FlxG.flash(0xff00ff00, 0.75);
+//				FlxG.flash(0xff00ff00, 0.75);
 				PlayState._currLevel.points += 1000;
+				sequencerFlashTimer = 1.0;
 			}
 			else
 			{
-				FlxG.flash(0xffff0000, 0.75);
+//				FlxG.flash(0xffff0000, 0.75);
 			}
 			
 			for (var i:int = 0; i < sequencerArray.length; i++) {
@@ -142,9 +151,17 @@ package
 			sequencer = new FlxSprite(0,0);
 			sequencer.loadGraphic(imgSequencer, true, true, 100, 48);
 			sequencer.scrollFactor.x = sequencer.scrollFactor.y = 0;
-			sequencer.y = this.y - 52;
+			sequencer.y = this.y - 47;
 			sequencer.x = this.x - 22;
-			PlayState.groupForegroundHigh.add(sequencer);	
+			PlayState.groupForegroundHigh.add(sequencer);
+			
+			sequencerFlash = new FlxSprite(0,0);
+			sequencerFlash.loadGraphic(imgSequencerFlash, true, true, 100, 48);
+			sequencerFlash.scrollFactor.x = sequencerFlash.scrollFactor.y = 0;
+			sequencerFlash.y = this.y - 47;
+			sequencerFlash.x = this.x - 22;
+			sequencerFlash.visible = false;
+			PlayState.groupForegroundHigh.add(sequencerFlash);
 			
 			for (var i:int = 0; i < 3; i++) {
 				var skull:SkullInventoryItem;
@@ -168,7 +185,7 @@ package
 					number = new FlxSprite(0,0);
 					number.loadGraphic( getNumberImage( 6 + j - ( 3 * i ) ), true, true, 11, 11);
 					number.scrollFactor.x = number.scrollFactor.y = 0;
-					number.y = this.y + i*22 + 7 + 3*i;
+					number.y = this.y + i*22 + 12 + 3*i;
 					number.x = this.x + j*22 + 7 + 3*j;
 					number.alpha = 0.75;
 					numberArray.push( number );
@@ -177,7 +194,7 @@ package
 					var skull:SkullInventoryItem;
 					skull = new SkullInventoryItem(0,0,false,_hudTilemap);
 					skull.scrollFactor.x = skull.scrollFactor.y = 0;
-					skull.y = this.y + i*22 + 4 + 3*i;
+					skull.y = this.y + i*22 + 9 + 3*i;
 					skull.x = this.x + j*22 + 4 + 3*j;
 					PlayState.groupForegroundHigh.add(skull);
 					
@@ -226,6 +243,29 @@ package
 		
 		override public function update():void
 		{	
+			if( sequencerFlashTimer > 0 )
+			{
+				sequencerFlashTimer -= FlxG.elapsed;
+				if( sequencerFlashToggle <= 0 )
+				{
+					if( sequencerFlash.visible )
+						sequencerFlash.visible = false;
+					else
+						sequencerFlash.visible = true;
+					
+					sequencerFlashToggle = 0.035;
+				}
+				else
+				{
+					sequencerFlashToggle -= FlxG.elapsed;
+				}
+			}
+			else
+			{
+				sequencerFlashToggle = 0;
+				sequencerFlash.visible = false;
+			}
+						
 			if( inventoryDisabledTime > 0 )
 			{
 				inventoryDisabledTime -= FlxG.elapsed;
