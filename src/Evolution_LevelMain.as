@@ -226,6 +226,7 @@ package    {
 		
 		private function checkAnyKey():void 
 		{
+			FlxG.music.stop();
 			roundEndContinueText.visible = true;
 			if (FlxG.keys.any())
 			{
